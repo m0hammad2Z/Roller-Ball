@@ -1,0 +1,74 @@
+{
+    "name": "Game",
+    "maps": [
+        {
+            "name": "Game Map",
+            "id": "9c1dc215-b05c-442e-b393-9a26eac1ed6b",
+            "actions": [
+                {
+                    "name": "Touch Press",
+                    "type": "Button",
+                    "id": "b5802920-a9a2-4e74-a35d-0f4cc314a9e4",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Start touch pos",
+                    "type": "PassThrough",
+                    "id": "95576b63-9e43-4960-bdda-3b7c7e61e526",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                },
+                {
+                    "name": "Current touch pos",
+                    "type": "PassThrough",
+                    "id": "8a462fd1-5805-468c-8e37-7a2853866fb2",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "e5067f5c-8640-4ce5-8135-ce1ded44f469",
+                    "path": "<Touchscreen>/primaryTouch/startPosition/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Start touch pos",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "b5f3ea94-02bc-44a1-b82e-c42914261220",
+                    "path": "<Touchscreen>/primaryTouch/position/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Current touch pos",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e1af933a-579d-412e-85d8-abf416359b5f",
+                    "path": "<Touchscreen>/primaryTouch/press",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Touch Press",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
