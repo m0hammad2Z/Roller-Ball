@@ -183,6 +183,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8970302491324161657}
   - component: {fileID: 7153838105288847303}
+  - component: {fileID: 8866548603810443548}
   m_Layer: 0
   m_Name: Tour 0degree 1
   m_TagString: clone
@@ -222,3 +223,16 @@ MonoBehaviour:
   isTurning: 1
   backward: 1
   turnSpeed: 50
+--- !u!65 &8866548603810443548
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8310339475948816973}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.7082753, y: 4.2022443, z: 1}
+  m_Center: {x: 0.07525802, y: 0.11386895, z: -0.87}

@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class ShopSystem : MonoBehaviour
 {
-    public TextMeshProUGUI meesageText;
+    public Button randomButton;
 
     public item balls;
     public item cylinders;
@@ -34,22 +34,30 @@ public class ShopSystem : MonoBehaviour
             t.LoadData(it);
             if (!t.isUnlocked)
             {
-                t.itemParent.image.color = Color.red;
+                t.itemParent.GetComponent<Image>().sprite = it.unUsedSprite;
+                if (t.isOpenWithLevel)
+                    t.itemParent.transform.GetChild(1).GetComponent<TextMeshProUGUI>().SetText("Level " + t.unlockLevel);
+                else
+                    t.itemParent.transform.GetChild(1).GetComponent<TextMeshProUGUI>().SetText("Use Random");
+            }
+            else if(t.isUnlocked && t.isSelected)
+            {
+                
+                it.subItems[0].isSelected = false;
+                it.subItems[0].itemParent.image.sprite = it.unUsedSprite;
+                it.subItems[0].SaveData(it);
+
+                t.itemParent.GetComponent<Image>().sprite = it.usedSprite;
+                t.itemParent.transform.GetChild(1).GetComponent<TextMeshProUGUI>().SetText("");
+                it.itemGameObject.material = t.mat;
+
             }
             else
             {
-                t.itemParent.image.color = Color.green;
+                t.itemParent.transform.GetChild(1).GetComponent<TextMeshProUGUI>().SetText("");
+                t.itemParent.GetComponent<Image>().sprite = it.unUsedSprite;
             }
 
-            if (t.isSelected)
-            {
-                it.subItems[0].isSelected = false;
-                it.subItems[0].itemParent.image.sprite = it.unFillCircle;
-                it.subItems[0].SaveData(it);
-
-                it.itemGameObject.material = t.mat;
-                t.itemParent.image.sprite = it.fillCircle;
-            }
 
 
             //Active whene change to other Item
@@ -61,21 +69,21 @@ public class ShopSystem : MonoBehaviour
                     {
                         b.isSelected = false;
                         b.SaveData(it);
-                        b.itemParent.image.sprite = it.unFillCircle;
+                        b.itemParent.image.sprite = it.unUsedSprite;
                     }
 
                     t.isSelected = true;
                     t.SaveData(it);
                     it.itemGameObject.material = t.mat;
-                    t.itemParent.image.sprite = it.fillCircle;
+                    t.itemParent.image.sprite = it.usedSprite;
                 }
                 else if (!t.isUnlocked && t.isOpenWithLevel)
                 {
-                    meesageText.SetText("Unlock After Level " + t.unlockLevel);
+                    t.itemParent.transform.GetChild(1).GetComponent<TextMeshProUGUI>().SetText("Level " + t.unlockLevel);
                 }
                 else
                 {
-                    meesageText.SetText("Use The Random Button Below!");
+                    t.itemParent.transform.GetChild(1).GetComponent<TextMeshProUGUI>().SetText("Use Random");
                 }
             });
 
@@ -130,16 +138,9 @@ public class ShopSystem : MonoBehaviour
                     foreach (SubItems b in it.subItems)
                     {
                         b.isSelected = false;
-                        b.itemParent.image.sprite = it.unFillCircle;
+                        b.itemParent.image.sprite = it.unUsedSprite;
                         b.SaveData(it);
-                        if (!b.isUnlocked)
-                        {
-                            b.itemParent.image.color = Color.red;
-                        }
-                        else
-                        {
-                            b.itemParent.image.color = Color.green;
-                        }
+
 
                         //Check if the SubItem unlocke with random
                         if (!b.isOpenWithLevel)
@@ -149,20 +150,22 @@ public class ShopSystem : MonoBehaviour
                     }
 
                     it.subItems[rand].isSelected = true;
-                    it.subItems[rand].itemParent.image.color = Color.green;
+                    
                     it.subItems[rand].SaveData(it);
-                    it.subItems[rand].itemParent.image.sprite = it.fillCircle;
+                    it.subItems[rand].itemParent.image.sprite = it.usedSprite;
+                    it.subItems[rand].itemParent.transform.GetChild(1).GetComponent<TextMeshProUGUI>().SetText("");
                     it.itemGameObject.material = it.subItems[rand].mat;
                 }
             }
             else
             {
-                meesageText.SetText("All Random " + it.itemName + " Are Unlocked ");
+                //meesageText.SetText("All Random " + it.itemName + " Are Unlocked ");
+                randomButton.interactable = false;
             }
         }
         catch
         {
-            meesageText.SetText("All Random " + it.itemName + " Are Unlocked!");
+            //meesageText.SetText("All Random " + it.itemName + " Are Unlocked!");
         }
 
 
@@ -177,7 +180,7 @@ public class item
 {
     public string itemName;
     public MeshRenderer itemGameObject;
-    public Sprite fillCircle, unFillCircle;
+    public Sprite usedSprite, unUsedSprite;
     public SubItems[] subItems;
 
     

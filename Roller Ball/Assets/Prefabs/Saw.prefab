@@ -646,6 +646,10 @@ PrefabInstance:
       propertyPath: m_ReflectionProbeUsage
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7918335002988649766, guid: 8c55bc4954738094b99bae48b166342b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 6f686b3d4f8d32848b00276e3da2d946, type: 2}
     - target: {fileID: -7029948723529949830, guid: 8c55bc4954738094b99bae48b166342b, type: 3}
       propertyPath: m_TagString
       value: Obstacle
@@ -726,6 +730,10 @@ PrefabInstance:
       propertyPath: m_ReflectionProbeUsage
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8442510506162454399, guid: 8c55bc4954738094b99bae48b166342b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8c55bc4954738094b99bae48b166342b, type: 3}
 --- !u!1 &4401572633229442707 stripped

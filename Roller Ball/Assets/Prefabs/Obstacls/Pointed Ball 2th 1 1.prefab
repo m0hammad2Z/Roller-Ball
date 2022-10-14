@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4507088961863171613}
   - component: {fileID: 631184514358067562}
+  - component: {fileID: 8394157534169245581}
   m_Layer: 0
   m_Name: Pointed Ball 2th 1 1
   m_TagString: clone
@@ -49,6 +50,19 @@ MonoBehaviour:
   isTurning: 1
   backward: 1
   turnSpeed: 60
+--- !u!65 &8394157534169245581
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6553123477554085214}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.7082753, y: 4.2022443, z: 1}
+  m_Center: {x: 0.07525802, y: 0.11386895, z: -0.87}
 --- !u!1001 &5747788692189894322
 PrefabInstance:
   m_ObjectHideFlags: 0

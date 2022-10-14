@@ -134,7 +134,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: 1.0.0
+  bundleVersion: 1.0.2
   preloadedAssets:
   - {fileID: 11400000, guid: 8936129ab3cd90544be9a24c69513a23, type: 2}
   metroInputSource: 0
@@ -274,7 +274,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: aff9d773ba744a14babd100cf77a6a17, type: 3}
+      m_Icon: {fileID: 2800000, guid: 5837ffefa40b37241ba717f36dcb54aa, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -717,7 +717,7 @@ PlayerSettings:
   scriptingBackend:
     Android: 1
   il2cppCompilerConfiguration:
-    Android: 2
+    Android: 1
   managedStrippingLevel: {}
   incrementalIl2cppBuild: {}
   suppressCommonWarnings: 1

@@ -21,10 +21,10 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: QuadObs
-  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-  m_ValidKeywords:
-  - _EMISSION
-  m_InvalidKeywords: []
+  m_Shader: {fileID: 4800000, guid: 7cd5de0b884b14f88ab763ef465e1799, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _SEGMENTED_ON
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -73,10 +73,14 @@ Material:
     m_Ints: []
     m_Floats:
     - LineThickness: 0.03
+    - _AmbientCol: 0
     - _BUILTIN_QueueControl: 0
     - _BUILTIN_QueueOffset: 0
     - _Brightness: 0.39
     - _BumpScale: 1
+    - _Clipped: 0
+    - _ColBright: 0
+    - _ColIntense: 1
     - _Cutoff: 0.5
     - _Detail: 0.02
     - _DetailNormalMapScale: 1
@@ -84,15 +88,27 @@ Material:
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
+    - _Lumin: 0
+    - _MaxLight: 1
     - _Metallic: 0.72
+    - _MinLight: 1
     - _Mode: 0
     - _OcclusionStrength: 1
+    - _Offset: 0
+    - _OtlWidth: 1.64
     - _Parallax: 0.02
     - _Rim: 1
+    - _Segmented: 1
     - _Shift: 1
+    - _ShnIntense: 0.13
+    - _ShnOverlap: 0
+    - _ShnRange: 0.15
+    - _ShnSmooth: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _Steps: 18.9
+    - _StpSmooth: 0.42
     - _Strength: 0.25
     - _UVSec: 0
     - _ZWrite: 1
@@ -103,10 +119,12 @@ Material:
     - SliceColor: {r: 1, g: 1, b: 1, a: 0}
     - _Base: {r: 0.001957991, g: 0.007920956, b: 0.03773582, a: 0}
     - _Base_Color: {r: 1, g: 0.09377968, b: 0, a: 0}
-    - _Color: {r: 1, g: 0, b: 0, a: 1}
+    - _Color: {r: 1, g: 0.37248123, b: 0.10849059, a: 1}
     - _Color1: {r: 0.8396226, g: 0.122774996, b: 0.122774996, a: 1}
     - _Color2: {r: 0.8301887, g: 0.15457019, b: 0.09789959, a: 1}
     - _EmissionColor: {r: 0.9716981, g: 0, b: 0, a: 1}
     - _Glow_Color: {r: 0.1759606, g: 0.7490196, b: 0, a: 0}
     - _Glue_Color: {r: 0.4669811, g: 0.6007584, b: 1, a: 0}
+    - _OtlColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ShnColor: {r: 1, g: 1, b: 0, a: 1}
   m_BuildTextureStacks: []

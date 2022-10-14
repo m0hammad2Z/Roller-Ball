@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     //public bool isVibrate = true;
     public LSystem lSystem;
 
+    public Material[] skyMaterials;
+
     [Header("Ads")]
     [Space]
     [Header("Continue Reward Ad")]
@@ -19,11 +21,18 @@ public class GameManager : MonoBehaviour
     public ShopSystem shopSystem;
     public static bool isCounting;
 
+    [Header("Audio")]
+    [Space]
+    public AudioClip completeLevel;
+    public AudioClip passObstecale;
+
+
     [Header("UI")]
     [Space]
     [Header("Start Panel")]
     public GameObject StartPanel;
     public TextMeshProUGUI lvlText;
+
     [Header("Game Panel")]
     public GameObject gamePanel;
 
@@ -34,14 +43,9 @@ public class GameManager : MonoBehaviour
 
     [Header("Pause Game Panel")]
     public GameObject pauseGamePanel;
-    public Image voiceButtonPGP;
-    public Sprite muteSpriteGP, unMuteSpriteGP;
 
     [Header("Game Over Panel")]
     public GameObject gameOverPanel;
-    public Image voiceButtonOGP;
-    public Sprite muteSpriteOGP, unMuteSpriteOGP;
-
 
     [Header("Shop Panel")]
     public GameObject shopPanel;
@@ -51,12 +55,8 @@ public class GameManager : MonoBehaviour
     [Header("Voice UI")]
     public Sprite muteSprite;
     public Sprite unMuteSprite;
-    public Button startVoiceButton, pauseVoiveButton, loseVoiceButton;
+    public Button startVoiceButton;
 
-    //[Header("Vibration UI")]
-    //public Sprite vibrateSprite;
-    //public Sprite unVibrateSprite;
-    //public Button startVibrateButton, pauseVibrateButton, loseVibrateButton;
 
     public GameObject wholeGameFnish;
 
@@ -70,34 +70,31 @@ public class GameManager : MonoBehaviour
         if (AudioManager.muteGameMusic == true)
         {
             startVoiceButton.image.sprite = muteSprite;
-            pauseVoiveButton.image.sprite = muteSprite;
-            loseVoiceButton.image.sprite = muteSprite;
-
         }
         else
         {
             startVoiceButton.image.sprite = unMuteSprite;
-            pauseVoiveButton.image.sprite = unMuteSprite;
-            loseVoiceButton.image.sprite = unMuteSprite;
         }
 
 
-        ////Vibration
-        //if (isVibrate == false)
-        //{
-        //    startVibrateButton.image.sprite = unVibrateSprite;
-        //    pauseVibrateButton.image.sprite = unVibrateSprite;
-        //    loseVibrateButton.image.sprite = unVibrateSprite;
-        //}
-        //else
-        //{
+        RandomSky();
 
-        //    startVibrateButton.image.sprite = vibrateSprite;
-        //    pauseVibrateButton.image.sprite = vibrateSprite;
-        //    loseVibrateButton.image.sprite = vibrateSprite;
-        //}
     }
 
+    public void RandomSky()
+    {
+        int randSky = Random.Range(0, skyMaterials.Length - 1);
+        if (randSky == PlayerPrefs.GetInt("randSky"))
+        {
+            RandomSky();
+        }
+        else
+        {
+            PlayerPrefs.SetInt("randSky", randSky);
+            RenderSettings.skybox = skyMaterials[randSky];
+        }
+        
+    }
 
     public void OnOpenScene()
     {
@@ -135,6 +132,7 @@ public class GameManager : MonoBehaviour
         LCPanel.SetActive(false);
         pauseGamePanel.SetActive(false);
         StartPanel.SetActive(false);
+        lvlText.gameObject.SetActive(false);
 
         isPlay = false;
     }
@@ -143,6 +141,8 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 0;
         pauseGamePanel.SetActive(true);
+        lvlText.gameObject.SetActive(false);
+
         isPlay = false;
     }
     public void OnContinue()
@@ -156,14 +156,11 @@ public class GameManager : MonoBehaviour
         Obstacle.moveSpeed = 0;
         counter.SetActive(true);
         OnClickStart();
+        gamePanel.SetActive(false);
         ballController.childBall.gameObject.SetActive(true);
-
-        GameObject clone = GameObject.FindGameObjectWithTag("clone");
         
-        
-            Destroy(clone);
-        
-
+        Destroy(GameObject.FindGameObjectWithTag("clone"));
+      
         counter.GetComponent<TextMeshProUGUI>().SetText("3");
         yield return new WaitForSeconds(1);
         counter.GetComponent<TextMeshProUGUI>().SetText("2");
@@ -172,7 +169,9 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         counter.SetActive(false);
+        lvlText.gameObject.SetActive(true);
         Obstacle.moveSpeed = 22;
+        gamePanel.SetActive(true);
         isCounting = false;
     }
 
@@ -188,7 +187,7 @@ public class GameManager : MonoBehaviour
         counter.SetActive(true);
         OnClickStart();
         ballController.childBall.gameObject.SetActive(true);
-        
+        gamePanel.SetActive(false);
 
         counter.GetComponent<TextMeshProUGUI>().SetText("3");
         yield return new WaitForSeconds(1);
@@ -198,7 +197,9 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         counter.SetActive(false);
+        lvlText.gameObject.SetActive(true);
         Obstacle.moveSpeed = 22;
+        gamePanel.SetActive(true);
         isCounting = false;
     }
 
@@ -274,8 +275,6 @@ public class GameManager : MonoBehaviour
         if (AudioManager.muteGameMusic == true)
         {
             startVoiceButton.image.sprite = unMuteSprite;
-            pauseVoiveButton.image.sprite = unMuteSprite;
-            loseVoiceButton.image.sprite = unMuteSprite;
 
             AudioManager.UnMute();
         }
@@ -283,34 +282,12 @@ public class GameManager : MonoBehaviour
         {
 
             startVoiceButton.image.sprite = muteSprite;
-            pauseVoiveButton.image.sprite = muteSprite;
-            loseVoiceButton.image.sprite = muteSprite;
+
 
             AudioManager.Mute();
         }
     }
 
-    //public void ControlVibration()
-    //{
-    //    if (isVibrate == true)
-    //    {
-    //        startVibrateButton.image.sprite = unVibrateSprite;
-    //        pauseVibrateButton.image.sprite = unVibrateSprite;
-    //        loseVibrateButton.image.sprite = unVibrateSprite;
-
-    //        isVibrate = false;
-    //    }
-    //    else
-    //    {
-
-    //        startVibrateButton.image.sprite = vibrateSprite;
-    //        pauseVibrateButton.image.sprite = vibrateSprite;
-    //        loseVibrateButton.image.sprite = vibrateSprite;
-
-    //        isVibrate = true;
-    //    }
-    //    PlayerPrefs.SetInt("vibrate", isVibrate == false ? 0 : 1);
-    //}
 
     public void CloseGame()
     {

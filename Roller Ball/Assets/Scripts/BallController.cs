@@ -85,29 +85,23 @@ public class BallController : MonoBehaviour
         if (other.gameObject.tag == "Obstacle")
         {
             childBall.gameObject.SetActive(false);
-            //if (gameManager.isVibrate == true)
-            //{
-            //    Handheld.Vibrate();
-            //    print("Vibrate");
-            //}
             gameManager.OnGameOver();
         }
-        //if (other.gameObject.tag == "Vibrate")
-        //{
-        //    //if (gameManager.isVibrate == true)
-        //    //{
-        //    //    Handheld.Vibrate();
-        //    //    print("Vibrate");
-        //    //}
-        //}
+        if (other.gameObject.tag == "Vibrate")
+        {
+            gameManager.GetComponent<AudioSource>().clip = gameManager.passObstecale;
+            gameManager.GetComponent<AudioSource>().Play();
+            Destroy(other.gameObject, 0.5f);
+        }
         if (other.gameObject.tag == "EndPoint")
         {
             gameManager.OnLevelComplete();
-            //if (gameManager.isVibrate == true)
-            //{
-            //    Handheld.Vibrate();
-            //    print("Vibrate");
-            //}
+            gameManager.GetComponent<AudioSource>().clip = gameManager.completeLevel;
+            gameManager.GetComponent<AudioSource>().Play();
+        }
+        if (other.gameObject.tag == "clone")
+        {
+            Destroy(other.gameObject, 0.5f);
         }
     }
 }

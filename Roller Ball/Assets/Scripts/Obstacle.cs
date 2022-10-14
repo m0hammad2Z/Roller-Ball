@@ -17,6 +17,8 @@ public class Obstacle : MonoBehaviour
         {
             Turning();
         }
+
+        Destroy(this, 15);
     }
 
     void Move()

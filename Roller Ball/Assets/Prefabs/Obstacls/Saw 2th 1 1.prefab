@@ -375,6 +375,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5824407990741008635}
   - component: {fileID: 5824407990741008634}
+  - component: {fileID: 2866351369324478036}
   m_Layer: 0
   m_Name: Saw 2th 1 1
   m_TagString: clone
@@ -415,6 +416,19 @@ MonoBehaviour:
   isTurning: 1
   backward: 1
   turnSpeed: 60
+--- !u!65 &2866351369324478036
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5824407990741010180}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.7082753, y: 4.2022443, z: 1}
+  m_Center: {x: 0.07525802, y: 0.11386895, z: -0.87}
 --- !u!1 &6914861339338566253
 GameObject:
   m_ObjectHideFlags: 0
