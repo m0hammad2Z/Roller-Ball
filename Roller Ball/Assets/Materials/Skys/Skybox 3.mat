@@ -8,10 +8,10 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Skybox 3
-  m_Shader: {fileID: 4800000, guid: 1a7dfa57ad13b20408e7f90a0dbe91c0, type: 3}
-  m_ValidKeywords:
+  m_Shader: {fileID: 4800000, guid: 18186c36d1d38734a80275eb681ab94d, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords:
   - _SCREENSPACE_ON
-  m_InvalidKeywords: []
   m_LightmapFlags: 5
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -77,7 +77,7 @@ Material:
     - _Parallax: 0.02
     - _Rim: 0.62
     - _Rotation: 0
-    - _Scale: 0.79
+    - _Scale: -1.26
     - _Screenspace: 1
     - _Shift: 0.78
     - _SrcBlend: 1
@@ -87,14 +87,14 @@ Material:
     - _mult: 1
     - _pwer: 1
     m_Colors:
-    - _Bottom: {r: 0.33784264, g: 0.9811321, b: 0.4779662, a: 0}
+    - _Bottom: {r: 0.47450984, g: 0.6796218, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Color1: {r: 0.039215673, g: 0.11709309, b: 0.5647059, a: 1}
-    - _Color2: {r: 0, g: 0.5285667, b: 0.5754717, a: 1}
+    - _Color1: {r: 1, g: 0.68221146, b: 0.042452812, a: 1}
+    - _Color2: {r: 1, g: 0.93929523, b: 0.6179246, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
     - _GroundColor: {r: 0.07586193, g: 0, b: 1, a: 1}
     - _SkyTint: {r: 1, g: 0, b: 0, a: 1}
     - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
-    - _Top: {r: 0.33095244, g: 0.7075472, b: 0.15018693, a: 0}
+    - _Top: {r: 1, g: 0.77943546, b: 0.3820755, a: 0}
   m_BuildTextureStacks: []

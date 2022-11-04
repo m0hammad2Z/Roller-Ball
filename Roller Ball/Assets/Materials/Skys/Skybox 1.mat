@@ -87,7 +87,7 @@ Material:
     - _mult: 1
     - _pwer: 1
     m_Colors:
-    - _Bottom: {r: 0, g: 0.6090965, b: 1, a: 0}
+    - _Bottom: {r: 0.5424528, g: 0.82056975, b: 1, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color1: {r: 0.039215673, g: 0.11709309, b: 0.5647059, a: 1}
     - _Color2: {r: 0, g: 0.5285667, b: 0.5754717, a: 1}
@@ -96,5 +96,5 @@ Material:
     - _GroundColor: {r: 0.07586193, g: 0, b: 1, a: 1}
     - _SkyTint: {r: 1, g: 0, b: 0, a: 1}
     - _Tint: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
-    - _Top: {r: 0.08627452, g: 0.76671547, b: 0.8117647, a: 0}
+    - _Top: {r: 0, g: 0.9405403, b: 1, a: 0}
   m_BuildTextureStacks: []

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+
 public class BallController : MonoBehaviour
 {
     Game gameInputActions;
@@ -11,7 +12,8 @@ public class BallController : MonoBehaviour
 
     public GameManager gameManager;
     public Transform cylinder, childBall;
-    public float ballTurnSpeed;
+    public float ballTurnSpeedTouch, ballTurnSpeedPC;
+
 
     //float angle, counter = 0.3f;
 
@@ -22,6 +24,7 @@ public class BallController : MonoBehaviour
 
         gameInputActions.GameMap.TouchPress.started += startTouch;
         gameInputActions.GameMap.TouchPress.canceled += cancelTouch;
+
 
     }
 
@@ -72,11 +75,20 @@ public class BallController : MonoBehaviour
         //    angle = transform.rotation.eulerAngles.z - 90; counter = 0.37f;
         //}
 
-
+        if (gameInputActions.GameMap.RightArrow.ReadValue<float>() > 0)
+        {
+            transform.RotateAround(cylinder.transform.position, Vector3.forward, -(ballTurnSpeedPC * Time.deltaTime));
+            Debug.Log("Left" + gameInputActions.GameMap.RightArrow.ReadValue<float>());
+        }
+        else if(gameInputActions.GameMap.LeftArrow.ReadValue<float>() > 0)
+        {
+            transform.RotateAround(cylinder.transform.position, Vector3.forward, +(ballTurnSpeedPC * Time.deltaTime));
+            Debug.Log("Left" + gameInputActions.GameMap.LeftArrow.ReadValue<float>());
+        }
 
         //Free rotation
         if (isTouch)
-            transform.RotateAround(cylinder.transform.position, Vector3.forward, (currentTouchValue - startTouchValue) * ballTurnSpeed * Time.deltaTime);
+            transform.RotateAround(cylinder.transform.position, Vector3.forward, (currentTouchValue - startTouchValue) * ballTurnSpeedTouch * Time.deltaTime);
 
     }
 

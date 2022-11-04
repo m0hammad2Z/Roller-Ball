@@ -1,11 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.InputSystem;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 using UnityEngine.UI;
+
+#if !UNITY_EDITOR && UNITY_WEBGL
+using System.Runtime.InteropServices;
+#endif
+
 public class GameManager : MonoBehaviour
 {
+#if !UNITY_EDITOR && UNITY_WEBGL
+        [DllImport("__Internal")]
+        private static extern bool IsMobile();
+#endif
+
+    public bool isMobile()
+    {
+#if !UNITY_EDITOR && UNITY_WEBGL
+return IsMobile();
+#endif
+        return false;
+    }
+
     //public int score;
     public bool isPlay;
     //public bool isVibrate = true;
@@ -31,7 +50,8 @@ public class GameManager : MonoBehaviour
     [Space]
     [Header("Start Panel")]
     public GameObject StartPanel;
-    public TextMeshProUGUI lvlText;
+    public Slider slider;
+    public TextMeshProUGUI lvlText, startText;
 
     [Header("Game Panel")]
     public GameObject gamePanel;
@@ -60,8 +80,10 @@ public class GameManager : MonoBehaviour
 
     public GameObject wholeGameFnish;
 
+
     void Start()
     {
+
         activeBallsPanel = true;
         OnOpenScene();
         //isVibrate = PlayerPrefs.GetInt("vibrate") == 1 ? true : false;
@@ -79,11 +101,27 @@ public class GameManager : MonoBehaviour
 
         RandomSky();
 
+#if UNITY_WEBGL
+        if (!isMobile())
+        {
+            startText.SetText("Press Enter");
+        }
+        else
+        {
+            startText.SetText("Tap To Start");
+        }
+#endif
+
+#if UNITY_ANDROID
+        startText.SetText("Tap To Start");
+#endif
+
     }
 
     public void RandomSky()
     {
-        int randSky = Random.Range(0, skyMaterials.Length - 1);
+        int randSky = Random.Range(0, skyMaterials.Length);
+        Debug.Log(randSky);
         if (randSky == PlayerPrefs.GetInt("randSky"))
         {
             RandomSky();
@@ -93,7 +131,7 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("randSky", randSky);
             RenderSettings.skybox = skyMaterials[randSky];
         }
-        
+
     }
 
     public void OnOpenScene()
@@ -158,9 +196,9 @@ public class GameManager : MonoBehaviour
         OnClickStart();
         gamePanel.SetActive(false);
         ballController.childBall.gameObject.SetActive(true);
-        
+
         Destroy(GameObject.FindGameObjectWithTag("clone"));
-      
+
         counter.GetComponent<TextMeshProUGUI>().SetText("3");
         yield return new WaitForSeconds(1);
         counter.GetComponent<TextMeshProUGUI>().SetText("2");
@@ -296,7 +334,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if(lSystem.currentLevel >= lSystem.levels.Count)
+        if (lSystem.currentLevel >= lSystem.levels.Count)
         {
             wholeGameFnish.SetActive(true);
         }
@@ -305,7 +343,7 @@ public class GameManager : MonoBehaviour
             lvlText.SetText("Level " + lSystem.levels[lSystem.currentLevel].levelID);
         }
 
-        if(activeBallsPanel == true)
+        if (activeBallsPanel == true)
         {
             cylinderPanel.SetActive(false);
             ballsPanel.SetActive(true);
@@ -314,7 +352,15 @@ public class GameManager : MonoBehaviour
         {
             cylinderPanel.SetActive(true);
             ballsPanel.SetActive(false);
+
+        }
+
+
+        if (Keyboard.current.enterKey.isPressed == true)
+        {
+            OnClickStart();
+
         }
     }
-
 }
+
