@@ -24,7 +24,6 @@ Material:
   m_Shader: {fileID: 4800000, guid: 128c5f1edaefa4c4fb3f9f7a4615edb2, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
-  - _GLOSSYREFLECTIONS_OFF
   - _RIMLIMIT_ON
   - _RIMOVERLAP_ON
   - _SEGMENTED_ON
@@ -63,7 +62,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 61ad493524f2acb45bd30463c1914d9e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -97,7 +96,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 0
-    - _AmbientCol: 0.36
+    - _AmbientCol: 0.5
     - _Blend: 0
     - _BumpScale: 1
     - _ClearCoatMask: 0
@@ -126,15 +125,15 @@ Material:
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _Segmented: 1
-    - _ShnIntense: 0.15
+    - _ShnIntense: 0.05
     - _ShnOverlap: 0
-    - _ShnRange: 0.258
+    - _ShnRange: 0.73
     - _ShnSmooth: 1
     - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _Steps: 7.8
+    - _Steps: 2.7
     - _StpSmooth: 0.205
     - _Surface: 0
     - _UVSec: 0

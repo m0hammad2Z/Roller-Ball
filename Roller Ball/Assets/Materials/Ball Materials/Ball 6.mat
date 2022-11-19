@@ -34,7 +34,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Ball 6
-  m_Shader: {fileID: 4800000, guid: 128c5f1edaefa4c4fb3f9f7a4615edb2, type: 3}
+  m_Shader: {fileID: 4800000, guid: 7cd5de0b884b14f88ab763ef465e1799, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
   - _RIMLIMIT_ON
@@ -75,7 +75,7 @@ Material:
         m_Scale: {x: 1.13, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: e7dcedd1cc43283408fe533562e4f29d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -157,7 +157,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 0.53673553, b: 0, a: 1}
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 1, g: 0.41844097, b: 0, a: 1}
     - _EmissionColor: {r: 0.16037738, g: 0.110692196, b: 0, a: 1}
     - _OtlColor: {r: 0.1882353, g: 0.1781615, b: 0.078431375, a: 1}
     - _ShnColor: {r: 0.9406834, g: 1, b: 0.7294118, a: 1}
