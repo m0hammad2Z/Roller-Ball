@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,11 +13,10 @@ public class BallController : MonoBehaviour
 
     public GameManager gameManager;
     public Transform cylinder, childBall;
-    public float ballTurnSpeedTouch, ballTurnSpeedPC;
+    public float ballTurnSpeedTouch, ballTurnSpeedPC, maxAngle, minAngle;
 
-
-    //float angle, counter = 0.3f;
-
+    [SerializeField] CameraController cam;
+    
     void Awake()
     {
         gameInputActions = new Game();
@@ -24,7 +24,6 @@ public class BallController : MonoBehaviour
 
         gameInputActions.GameMap.TouchPress.started += startTouch;
         gameInputActions.GameMap.TouchPress.canceled += cancelTouch;
-
 
     }
 
@@ -38,25 +37,10 @@ public class BallController : MonoBehaviour
         isTouch = false;
     }
 
-    //private void Update()
-    //{
-    //    counter = counter - 1 * Time.deltaTime;
-
-    //}
-
 
     private void FixedUpdate()
     {
-        //if(counter <= 0)
-            Rotate();
-
-        //if (!isTouch)
-        //{
-        //    //transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, angle), ballTurnSpeed);
-        //    GetComponent<Rigidbody>().MoveRotation(Quaternion.Slerp(transform.rotation, Quaternion.Euler(0, 0, angle), ballTurnSpeed));
-        //    startTouchValue = 0;
-        //    currentTouchValue = 0;
-        //}
+        Rotate();
     }
 
 
@@ -65,31 +49,35 @@ public class BallController : MonoBehaviour
         startTouchValue = gameInputActions.GameMap.Starttouchpos.ReadValue<float>();
         currentTouchValue = gameInputActions.GameMap.Currenttouchpos.ReadValue<float>();
 
-
-        //if ((currentTouchValue - startTouchValue) > 0 && isTouch)
-        //{
-        //    angle = transform.rotation.eulerAngles.z + 90; counter = 0.37f;
-        //}
-        //else if ((currentTouchValue - startTouchValue) < 0 && isTouch)
-        //{
-        //    angle = transform.rotation.eulerAngles.z - 90; counter = 0.37f;
-        //}
-
         if (gameInputActions.GameMap.RightArrow.ReadValue<float>() > 0)
         {
             transform.RotateAround(cylinder.transform.position, Vector3.forward, -(ballTurnSpeedPC * Time.deltaTime));
-            Debug.Log("Left" + gameInputActions.GameMap.RightArrow.ReadValue<float>());
+            //Debug.Log("Left" + gameInputActions.GameMap.RightArrow.ReadValue<float>());
         }
         else if(gameInputActions.GameMap.LeftArrow.ReadValue<float>() > 0)
         {
             transform.RotateAround(cylinder.transform.position, Vector3.forward, +(ballTurnSpeedPC * Time.deltaTime));
-            Debug.Log("Left" + gameInputActions.GameMap.LeftArrow.ReadValue<float>());
+            //Debug.Log("Left" + gameInputActions.GameMap.LeftArrow.ReadValue<float>());
         }
 
         //Free rotation
         if (isTouch)
-            transform.RotateAround(cylinder.transform.position, Vector3.forward, (currentTouchValue - startTouchValue) * ballTurnSpeedTouch * Time.deltaTime);
+        {
+            float angle = -(currentTouchValue - startTouchValue) * ballTurnSpeedTouch * Time.deltaTime;
+            transform.RotateAround(cylinder.transform.position, Vector3.forward, angle);
+            
+        }
+        Vector3 clampedEulerAngles = transform.eulerAngles;
 
+        // Clamping Z-axis
+        float clampedAngleZ = clampedEulerAngles.z;
+        if (clampedAngleZ > 180f)
+            clampedAngleZ -= 360f;
+        clampedAngleZ = Mathf.Clamp(clampedAngleZ, minAngle, maxAngle);
+
+        clampedEulerAngles.z = clampedAngleZ;
+
+        transform.eulerAngles = clampedEulerAngles;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -101,8 +89,10 @@ public class BallController : MonoBehaviour
         }
         if (other.gameObject.tag == "Vibrate")
         {
-            gameManager.GetComponent<AudioSource>().clip = gameManager.passObstecale;
-            gameManager.GetComponent<AudioSource>().Play();
+            //gameManager.GetComponent<AudioSource>().clip = gameManager.passObstecale;
+            //gameManager.GetComponent<AudioSource>().Play();
+            StartCoroutine(cam.Shake());
+            
             Destroy(other.gameObject, 0.5f);
         }
         if (other.gameObject.tag == "EndPoint")
@@ -116,4 +106,6 @@ public class BallController : MonoBehaviour
             Destroy(other.gameObject, 0.5f);
         }
     }
+
+
 }

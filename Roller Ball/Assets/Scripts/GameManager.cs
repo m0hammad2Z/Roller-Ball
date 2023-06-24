@@ -99,8 +99,6 @@ return IsMobile();
         }
 
 
-        RandomSky();
-
 #if UNITY_WEBGL
         if (!isMobile())
         {
@@ -118,21 +116,31 @@ return IsMobile();
 
     }
 
-    public void RandomSky()
-    {
-        int randSky = Random.Range(0, skyMaterials.Length);
-        Debug.Log(randSky);
-        if (randSky == PlayerPrefs.GetInt("randSky"))
-        {
-            RandomSky();
-        }
-        else
-        {
-            PlayerPrefs.SetInt("randSky", randSky);
-            RenderSettings.skybox = skyMaterials[randSky];
-        }
+    //public void RandomSky()
+    //{
+    //    //int k = 0;
+    //    //item t = shopSystem.cylinders;
+    //    //foreach (SubItems x in t.subItems)
+    //    //{
+    //    //    if(x.isUnlocked && x.isSelected)
+    //    //    {
+    //    //        k = x.id-1; 
+    //    //        break;
+    //    //    }
+    //    //}
 
-    }
+    //    int randSky = Random.Range(0, skyMaterials.Length);
+    //    Debug.Log(randSky);
+    //    if (randSky == PlayerPrefs.GetInt("randSky"))
+    //    {
+    //        RandomSky();
+    //    }
+    //    else
+    //    {
+    //        PlayerPrefs.SetInt("randSky", randSky);
+    //        RenderSettings.skybox = skyMaterials[randSky];
+    //    }
+    //}
 
     public void OnOpenScene()
     {

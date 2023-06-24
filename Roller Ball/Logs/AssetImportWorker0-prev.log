@@ -1,23 +1,23 @@
 Using pre-set license
-Built from '2021.3/release' branch; Version is '2021.3.12f1 (8af3c3e441b1) revision 9106371'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22621) 64bit Professional' Language: 'en' Physical Memory: 7964 MB
+Built from '2023.1/staging' branch; Version is '2023.1.0f1 (a008fa768e6c) revision 10488058'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 11  (10.0.23481) 64bit Professional' Language: 'en' Physical Memory: 7964 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity\Hub\Editor\2021.3.12f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2023.1.0f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
 -name
 AssetImportWorker0
 -projectPath
-C:/Users/GIGABYTE/Desktop/Projects/Unity/Roller-Ball/Roller Ball
+C:/Users/imham/Desktop/Projects/Unity/Roller-Ball/Roller Ball
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60857
-Successfully changed project path to: C:/Users/GIGABYTE/Desktop/Projects/Unity/Roller-Ball/Roller Ball
-C:/Users/GIGABYTE/Desktop/Projects/Unity/Roller-Ball/Roller Ball
+49825
+Successfully changed project path to: C:/Users/imham/Desktop/Projects/Unity/Roller-Ball/Roller Ball
+C:/Users/imham/Desktop/Projects/Unity/Roller-Ball/Roller Ball
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -39,6 +39,8 @@ C:/Users/GIGABYTE/Desktop/Projects/Unity/Roller-Ball/Roller Ball
     "memorysetup-job-temp-allocator-block-size=2097152"
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
     "memorysetup-temp-allocator-size-background-worker=32768"
     "memorysetup-temp-allocator-size-job-worker=262144"
     "memorysetup-temp-allocator-size-preload-manager=33554432"
@@ -47,1499 +49,782 @@ C:/Users/GIGABYTE/Desktop/Projects/Unity/Roller-Ball/Roller Ball
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Refreshing native plugins compatible for Editor in 78.86 ms, found 3 plugins.
+Player connection [7524] Host "[IP] 192.168.100.6 [Port] 0 [Flags] 2 [Guid] 4016515008 [EditorId] 4016515008 [Version] 1048832 [Id] WindowsEditor(7,Mohammad) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [7524] Host "[IP] 192.168.100.6 [Port] 0 [Flags] 2 [Guid] 4016515008 [EditorId] 4016515008 [Version] 1048832 [Id] WindowsEditor(7,Mohammad) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Library Redirect Path: Library/Refreshing native plugins compatible for Editor in 105.08 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Initialize engine version: 2021.3.12f1 (8af3c3e441b1)
-[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path C:/Users/GIGABYTE/Desktop/Projects/Unity/Roller-Ball/Roller Ball/Assets
+Initialize engine version: 2023.1.0f1 (a008fa768e6c)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.1.0f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/imham/Desktop/Projects/Unity/Roller-Ball/Roller Ball/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
     Renderer: NVIDIA GeForce GTX 1660 SUPER (ID=0x21c4)
     Vendor:   NVIDIA
-    VRAM:     5992 MB
-    Driver:   30.0.15.1215
+    VRAM:     5981 MB
+    Driver:   31.0.15.4529
 Initialize mono
-Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/Managed'
-Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
-Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56756
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.1.0f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.1.0f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.1.0f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56696
 Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Registering precompiled unity dll's ...
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007112 seconds.
-Native extension for WindowsStandalone target not found
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.1.0f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.1.0f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Registered in 0.004267 seconds.
+- Loaded All Assemblies, in  0.364 seconds
 Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 57.78 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Android Extension - Scanning For ADB Devices 278 ms
+Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Completed reload, in  0.495 seconds
-Domain Reload Profiling:
-	ReloadAssembly (496ms)
-		BeginReloadAssembly (79ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (0ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (337ms)
-			LoadAssemblies (79ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (69ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (24ms)
-			SetupLoadedEditorAssemblies (209ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (50ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (58ms)
-				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (68ms)
-				ProcessInitializeOnLoadMethodAttributes (32ms)
-				AfterProcessingInitializeOnLoad (0ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (0ms)
-Platform modules already initialized, skipping
-Registering precompiled user dll's ...
-Registered in 0.023704 seconds.
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+- Finished resetting the current domain, in  0.622 seconds
+Domain Reload Profiling: 985ms
+	BeginReloadAssembly (119ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (155ms)
+		LoadAssemblies (118ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (150ms)
+			TypeCache.Refresh (149ms)
+				TypeCache.ScanAssembly (135ms)
+			ScanForSourceGeneratedMonoScriptInfo (1ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (623ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (585ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (377ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (7ms)
+			ProcessInitializeOnLoadAttributes (131ms)
+			ProcessInitializeOnLoadMethodAttributes (68ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image C:\Users\imham\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\imham\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  2.328 seconds
+Refreshing native plugins compatible for Editor in 6.52 ms, found 3 plugins.
 Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 55.79 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Native extension for WindowsStandalone target not found
 System.Exception: Error! Visual Scripting: couldn't find visual scripting package
-  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
-  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
-  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
-  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
-  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
-  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
-  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
-  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
-  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00032] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:48 
-  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x00032] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:48 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
 UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.160 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1160ms)
-		BeginReloadAssembly (183ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (124ms)
-		EndReloadAssembly (899ms)
-			LoadAssemblies (99ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (171ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (35ms)
-			SetupLoadedEditorAssemblies (556ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (9ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (56ms)
-				BeforeProcessingInitializeOnLoad (58ms)
-				ProcessInitializeOnLoadAttributes (410ms)
-				ProcessInitializeOnLoadMethodAttributes (20ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (3ms)
-Platform modules already initialized, skipping
-========================================================================
-Worker process is ready to serve import requests
+- Finished resetting the current domain, in  1.298 seconds
+Domain Reload Profiling: 3622ms
+	BeginReloadAssembly (316ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (33ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (43ms)
+	LoadAllAssembliesAndSetupDomain (1923ms)
+		LoadAssemblies (1659ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (370ms)
+			TypeCache.Refresh (336ms)
+				TypeCache.ScanAssembly (322ms)
+			ScanForSourceGeneratedMonoScriptInfo (24ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (1298ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (957ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (21ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (99ms)
+			ProcessInitializeOnLoadAttributes (801ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
-Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 5.75 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3868 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 44 unused Assets / (192.0 KB). Loaded Objects now: 4332.
-Memory consumption went from 150.5 MB to 150.3 MB.
-Total: 9.103500 ms (FindLiveObjects: 0.179000 ms CreateObjectMapping: 0.087700 ms MarkObjects: 8.716700 ms  DeleteObjects: 0.118900 ms)
+Unloading 5678 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 91 unused Assets / (1.9 MB). Loaded Objects now: 6206.
+Memory consumption went from 225.1 MB to 223.3 MB.
+Total: 14.730700 ms (FindLiveObjects: 0.380300 ms CreateObjectMapping: 0.196600 ms MarkObjects: 13.775000 ms  DeleteObjects: 0.377000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/AotStubs.cs: 8104ef23ce41919efeb4e43bde99df30 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image C:\Users\imham\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\imham\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.883 seconds
+Refreshing native plugins compatible for Editor in 6.36 ms, found 3 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.432 seconds
+Domain Reload Profiling: 2311ms
+	BeginReloadAssembly (232ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (56ms)
+	RebuildCommonClasses (40ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (567ms)
+		LoadAssemblies (389ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (292ms)
+			TypeCache.Refresh (284ms)
+				TypeCache.ScanAssembly (275ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1432ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (554ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (18ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (92ms)
+			ProcessInitializeOnLoadAttributes (420ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 5.19 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5510 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (1.9 MB). Loaded Objects now: 6213.
+Memory consumption went from 195.9 MB to 194.1 MB.
+Total: 10.999100 ms (FindLiveObjects: 0.247700 ms CreateObjectMapping: 0.267600 ms MarkObjects: 10.136100 ms  DeleteObjects: 0.346500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/AotStubs.cs: 8104ef23ce41919efeb4e43bde99df30 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image C:\Users\imham\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\imham\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.713 seconds
+Refreshing native plugins compatible for Editor in 6.02 ms, found 3 plugins.
+Native extension for Android target not found
+Native extension for WindowsStandalone target not found
+System.Exception: Error! Visual Scripting: couldn't find visual scripting package
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
+UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
+UnityEngine.Logger:Log (UnityEngine.LogType,object)
+UnityEngine.Debug:LogError (object)
+UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
+
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  1.610 seconds
+Domain Reload Profiling: 2321ms
+	BeginReloadAssembly (175ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (51ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (20ms)
+	LoadAllAssembliesAndSetupDomain (482ms)
+		LoadAssemblies (292ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (263ms)
+			TypeCache.Refresh (254ms)
+				TypeCache.ScanAssembly (245ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1610ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (623ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (19ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (95ms)
+			ProcessInitializeOnLoadAttributes (480ms)
+			ProcessInitializeOnLoadMethodAttributes (22ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 6.01 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 5509 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (1.9 MB). Loaded Objects now: 6219.
+Memory consumption went from 196.8 MB to 195.0 MB.
+Total: 14.068000 ms (FindLiveObjects: 0.364400 ms CreateObjectMapping: 0.346200 ms MarkObjects: 12.872000 ms  DeleteObjects: 0.484400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/AotStubs.cs: 8104ef23ce41919efeb4e43bde99df30 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 4314.124205 seconds.
-  path: Assets/Textures/Stages Shop/cylinder 8.png
-  artifactKey: Guid(52d8e4eb512376f48b0e8e420d4e3896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Stages Shop/cylinder 8.png using Guid(52d8e4eb512376f48b0e8e420d4e3896) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c1517254981ff866dc9fe403ba5a86b') in 0.091935 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Textures/Stages Shop/cylinder 10.png
-  artifactKey: Guid(7d3d72f9233aa43469e4d79f9cb842b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Stages Shop/cylinder 10.png using Guid(7d3d72f9233aa43469e4d79f9cb842b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ad40528669bc1fe67586d2b951a0d9a') in 0.027264 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Textures/sound off.png
-  artifactKey: Guid(e6f89fa471b20564fbabef9ce17be088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/sound off.png using Guid(e6f89fa471b20564fbabef9ce17be088) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab491870fa6f5643fb9368d69ae615ae') in 0.029975 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Textures/open_in_full_FILL0_wght400_GRAD0_opsz48.png
-  artifactKey: Guid(4d0baa9814e284642a850fb122470a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/open_in_full_FILL0_wght400_GRAD0_opsz48.png using Guid(4d0baa9814e284642a850fb122470a12) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81c108c623b72d96bbd0198d8fb7fdde') in 0.023247 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Textures/Stages Shop/cylinder 2.png
-  artifactKey: Guid(11b132f69aa3f194bab1e3074c41cf7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Stages Shop/cylinder 2.png using Guid(11b132f69aa3f194bab1e3074c41cf7d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f4d3637c7b72aebdee2f978fa493e63') in 0.025156 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Textures/play.png
-  artifactKey: Guid(8f54d4f925a2a184e8c1a4d3f7369140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/play.png using Guid(8f54d4f925a2a184e8c1a4d3f7369140) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df98b82b2a91daf96c59cf6bcbb2a301') in 0.026786 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Textures/hand.png
-  artifactKey: Guid(c4eec9f3a68f99449a5027b3b87e2469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/hand.png using Guid(c4eec9f3a68f99449a5027b3b87e2469) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6db82556127f60f84713d565fe5fcc3') in 0.022959 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Textures/Shop panel elements/lower subPanel.png
-  artifactKey: Guid(92841f32fc38da849809cdbe9a0e9f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Shop panel elements/lower subPanel.png using Guid(92841f32fc38da849809cdbe9a0e9f73) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84259f336426423c6a68446ed12cfde7') in 0.149374 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Textures/Shop panel elements/random.png
-  artifactKey: Guid(de6ca4190a416234388bc12a0719724b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Shop panel elements/random.png using Guid(de6ca4190a416234388bc12a0719724b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c52b4e99effc52641a7dd3f10568ff6a') in 0.019898 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Textures/Ball Tex/Endpoint.png
-  artifactKey: Guid(d252202a76953064dabd5347fd80e3a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Ball Tex/Endpoint.png using Guid(d252202a76953064dabd5347fd80e3a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96d3b518087228332a505c3ea87ddba8') in 0.028441 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Textures/Ball Tex/monstare 2.png
-  artifactKey: Guid(dcf1715145adde14183b7a3cbfb1b062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Ball Tex/monstare 2.png using Guid(dcf1715145adde14183b7a3cbfb1b062) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4a57dd59b5357f0c401da57531bc5c6b') in 0.027970 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Textures/Stages Shop/cylinder 5.png
-  artifactKey: Guid(de103be8a388d094e9df7a79def923ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Stages Shop/cylinder 5.png using Guid(de103be8a388d094e9df7a79def923ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9db9a592bc114d79f8d9a88c08ea0341') in 0.029190 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Textures/Ball Tex/monstare 1.png
-  artifactKey: Guid(c386316a8c40fec47995b2cc781fd227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Ball Tex/monstare 1.png using Guid(c386316a8c40fec47995b2cc781fd227) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e49c9d11d3f69af51227e3904e6e231') in 0.025146 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Textures/Shop panel elements/question.png
-  artifactKey: Guid(52b91bd199c145848ac0ed3377b8557f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Shop panel elements/question.png using Guid(52b91bd199c145848ac0ed3377b8557f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3954a110d4a3d0eab80c40b1f15e4a8') in 0.024467 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Textures/ray.png
-  artifactKey: Guid(3fc41b379c9d4ea4e878b05a35073350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/ray.png using Guid(3fc41b379c9d4ea4e878b05a35073350) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ef9b891dd6461004a550204b3cf75ff') in 0.034086 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Textures/Ball Tex/golf ball.png
-  artifactKey: Guid(9fc54fbf223ac524cba5f9256a44aec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Ball Tex/golf ball.png using Guid(9fc54fbf223ac524cba5f9256a44aec4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72160bc6fbc6c9f2ea49cecf0317d10f') in 0.039001 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Textures/Stages Shop/cylinder 4.png
-  artifactKey: Guid(14c91a236912af243b200a9ee8ae8831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Stages Shop/cylinder 4.png using Guid(14c91a236912af243b200a9ee8ae8831) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f2c5c8065dd031dff76409dd9f1ea75') in 0.024316 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Textures/Ball Tex/football.png
-  artifactKey: Guid(61ad493524f2acb45bd30463c1914d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Ball Tex/football.png using Guid(61ad493524f2acb45bd30463c1914d9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0a3ebc302493d6ca78df174c926a291') in 0.032710 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
+  Time since last request: 259767.952853 seconds.
   path: Assets/Textures/Stages Shop/cylinder 6.png
   artifactKey: Guid(f00a674b14f5c4a43a2b81310bd2b135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Stages Shop/cylinder 6.png using Guid(f00a674b14f5c4a43a2b81310bd2b135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46f9c388e36dc5e58d29c8746ca35576') in 0.024717 seconds 
+Start importing Assets/Textures/Stages Shop/cylinder 6.png using Guid(f00a674b14f5c4a43a2b81310bd2b135) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c507e8aa0acf9a0a773f3bb512af5cf') in 0.017181 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
+  Time since last request: 1.627479 seconds.
+  path: Assets/Textures/Stages Shop/cylinder 5.png
+  artifactKey: Guid(de103be8a388d094e9df7a79def923ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Stages Shop/cylinder 5.png using Guid(de103be8a388d094e9df7a79def923ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95cadb161030a9f5545e605f8d1cf507') in 0.004957 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 11.453608 seconds.
+  path: Assets/Textures/Ball Tex/stars2.png
+  artifactKey: Guid(5754269eda3df214c95d2b75cbad0c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Ball Tex/stars2.png using Guid(5754269eda3df214c95d2b75cbad0c1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '097fcad21c6ba5efb00a1899c4baee59') in 0.005010 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Textures/Shop panel elements/used button.png
+  artifactKey: Guid(691f5f0f54c61c246b03e1b9b9d6062e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Shop panel elements/used button.png using Guid(691f5f0f54c61c246b03e1b9b9d6062e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acc0f77e35b4c05365eeb0ac1be9ea83') in 0.002827 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000102 seconds.
+  path: Assets/Textures/Shop panel elements/unUsed button.png
+  artifactKey: Guid(47661f6fec6398a408a52aa6bb0b0bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Shop panel elements/unUsed button.png using Guid(47661f6fec6398a408a52aa6bb0b0bee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acd2f8f7d405ae7ac276d92fbac44243') in 0.002491 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Textures/Shop panel elements/used ball.png
+  artifactKey: Guid(a20768bf44b4dde48bf00e8cc69be6e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Shop panel elements/used ball.png using Guid(a20768bf44b4dde48bf00e8cc69be6e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebee38e606258982d53f35bd5afbfe34') in 0.002697 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000091 seconds.
+  path: Assets/Textures/Shop panel elements/unselected.png
+  artifactKey: Guid(a83b0879bdd52774eadc399f5abf530f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Shop panel elements/unselected.png using Guid(a83b0879bdd52774eadc399f5abf530f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '290383ced03a185158c49e73f4771635') in 0.001799 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.277871 seconds.
+  path: Assets/Textures/Ball Tex/stars.png
+  artifactKey: Guid(24d9a3920513c1348b5d66a683f4cc2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Ball Tex/stars.png using Guid(24d9a3920513c1348b5d66a683f4cc2c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '807827474b8434de5b62cd0f89728ea6') in 0.004638 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.027640 seconds.
   path: Assets/Textures/Shop panel elements/selected.png
   artifactKey: Guid(7b710cdf03efaf546b122be2579ceab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Shop panel elements/selected.png using Guid(7b710cdf03efaf546b122be2579ceab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78e1a0f7b2e5544c05570282cc1a19d7') in 0.022059 seconds 
+Start importing Assets/Textures/Shop panel elements/selected.png using Guid(7b710cdf03efaf546b122be2579ceab4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95f08c848c1c9c590935008891a47468') in 0.001902 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000020 seconds.
+  Time since last request: 0.002959 seconds.
+  path: Assets/Textures/Game-icon/ss1.png
+  artifactKey: Guid(1461e7c88f41287499b5c4202d3cf0e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Game-icon/ss1.png using Guid(1461e7c88f41287499b5c4202d3cf0e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '658e40cccb0ed527f633d83603b79f48') in 0.005187 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.026443 seconds.
+  path: Assets/Scenes/Game/ReflectionProbe-0.exr
+  artifactKey: Guid(ff3ce37eb82067d48ba8056b696e2c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game/ReflectionProbe-0.exr using Guid(ff3ce37eb82067d48ba8056b696e2c8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d1655f9b9cfbf23bdb041e0209365e9') in 0.011591 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Textures/Shop panel elements/random.png
+  artifactKey: Guid(de6ca4190a416234388bc12a0719724b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Shop panel elements/random.png using Guid(de6ca4190a416234388bc12a0719724b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62cedcd49bb8e8af02986a398e3d35fc') in 0.002138 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.232812 seconds.
   path: Assets/Textures/Game-icon/Logo.png
   artifactKey: Guid(14de6245dd683e54da8c4c68e16d93eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Game-icon/Logo.png using Guid(14de6245dd683e54da8c4c68e16d93eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cb183afa84f7d3b3b52e73a2b106c3e') in 0.026465 seconds 
+Start importing Assets/Textures/Game-icon/Logo.png using Guid(14de6245dd683e54da8c4c68e16d93eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9379de3efc6d3bca6a496718e074a36') in 0.004234 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Textures/Stages Shop/cylinder 3.png
-  artifactKey: Guid(7bd0e6bb07aa4004498a788a3db60959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Stages Shop/cylinder 3.png using Guid(7bd0e6bb07aa4004498a788a3db60959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8f3bdfe4f5615eb213ab2a3b04bd9b8') in 0.028497 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Textures/Stages Shop/cylinder 7.png
-  artifactKey: Guid(46c989c752a834d419eec1aec1bd8b9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Stages Shop/cylinder 7.png using Guid(46c989c752a834d419eec1aec1bd8b9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64e7c31880d05d8e3ccf5f2195bae3cc') in 0.027179 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Textures/Stages Shop/cylinder 9.png
-  artifactKey: Guid(8777454d0f046674c8d103314e86b59b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Stages Shop/cylinder 9.png using Guid(8777454d0f046674c8d103314e86b59b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc18f9db1870a666d3fd2ae469b5e37f') in 0.025214 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 47.963584 seconds.
-  path: Assets/Textures/Balls Shop
-  artifactKey: Guid(22f65d3edd4bedd4eaef13f2cb77de1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Balls Shop using Guid(22f65d3edd4bedd4eaef13f2cb77de1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c1871e872441558d846e3eda8de9ac2') in 0.005302 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 728.031133 seconds.
-  path: Assets/Textures/Game-icon/ss2.png
-  artifactKey: Guid(07f240c6018edd74d8a72a202f7d8b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Game-icon/ss2.png using Guid(07f240c6018edd74d8a72a202f7d8b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cffc9abf57c8f23e800f889d8183220a') in 0.180965 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 82.529473 seconds.
-  path: Assets/Textures/Game-icon/rounded 512 x 512.png
-  artifactKey: Guid(5837ffefa40b37241ba717f36dcb54aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Game-icon/rounded 512 x 512.png using Guid(5837ffefa40b37241ba717f36dcb54aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b8617ad52c6b0aa3b00dcf066d1917f') in 0.032348 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.289383 seconds.
-  path: Assets/Textures/Game-icon/ss2.png
-  artifactKey: Guid(07f240c6018edd74d8a72a202f7d8b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Game-icon/ss2.png using Guid(07f240c6018edd74d8a72a202f7d8b76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23a9f7f98cbc8ca61ddb931bbc462dd5') in 0.115939 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 40.756519 seconds.
-  path: Assets/Textures/Stages Shop/cylinder 1.png
-  artifactKey: Guid(d63d17b048682694bb50554968a9fa22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Stages Shop/cylinder 1.png using Guid(d63d17b048682694bb50554968a9fa22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94b3db4b814458f33d16f0a8340ce746') in 0.033345 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.006892 seconds.
-  path: Assets/Textures/Button 1.png
-  artifactKey: Guid(2b63e39ae47adfb41b3a3f485077978f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Button 1.png using Guid(2b63e39ae47adfb41b3a3f485077978f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39aa82305ad8818b6a9ea224e271c592') in 0.026152 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Textures/Button 3.png
-  artifactKey: Guid(99dcc870a9bf0a148aa917211e8ea36f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Button 3.png using Guid(99dcc870a9bf0a148aa917211e8ea36f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e8341fcb4460ade22107c892009e8be') in 0.021106 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Textures/Button 2.png
-  artifactKey: Guid(8cbcdbd28bd7f85478a852c54f5a3ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Button 2.png using Guid(8cbcdbd28bd7f85478a852c54f5a3ba1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4885f7af715509ac175f1ac3fecfe5f') in 0.020064 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.268865 seconds.
-  path: Assets/Textures/Balls Shop/ball 18.png
-  artifactKey: Guid(02bbb09172becf6418b9669d12c13698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Balls Shop/ball 18.png using Guid(02bbb09172becf6418b9669d12c13698) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cbc96f9e3021a17b2474078e5da968e') in 0.038528 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000076 seconds.
-  path: Assets/Textures/Balls Shop/ball 15.png
-  artifactKey: Guid(aaca3dc377762c8409729f08dae8b46b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Balls Shop/ball 15.png using Guid(aaca3dc377762c8409729f08dae8b46b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '788ee1dd9838544527ee6395be2d6bcb') in 0.032779 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Textures/Balls Shop/ball 13.png
-  artifactKey: Guid(569a43ec296cf414ab21f0006ba11b3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Balls Shop/ball 13.png using Guid(569a43ec296cf414ab21f0006ba11b3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa711d45f930b940c1b833fde4da585e') in 0.028205 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Textures/Ball Tex/baskettball.png
-  artifactKey: Guid(e7dcedd1cc43283408fe533562e4f29d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Ball Tex/baskettball.png using Guid(e7dcedd1cc43283408fe533562e4f29d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '807f28fc2fcc211cab00e6f1f5ac325d') in 0.079286 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Textures/ball invert.png
-  artifactKey: Guid(72d984a6af9e781489af930725444720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/ball invert.png using Guid(72d984a6af9e781489af930725444720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6de3037f986494d46a7c2bb0fab21b7') in 0.021969 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000081 seconds.
-  path: Assets/Textures/Balls Shop/ball 17.png
-  artifactKey: Guid(40c96f4183750844c95e706c9dc8bcd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Balls Shop/ball 17.png using Guid(40c96f4183750844c95e706c9dc8bcd4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7f9ce5d741df272c213c49b9ecb49c7') in 0.024681 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Textures/Balls Shop/ball 4.png
-  artifactKey: Guid(6540570b25082234b8ddc0d9f68d3dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Balls Shop/ball 4.png using Guid(6540570b25082234b8ddc0d9f68d3dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3f45ddb9b610a729d82d7dfcc0c31bf') in 0.023299 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Textures/Balls Shop/ball 10.png
-  artifactKey: Guid(2382e1f5e72defa4bb9494923b4b239d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Balls Shop/ball 10.png using Guid(2382e1f5e72defa4bb9494923b4b239d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b64df13468042c928218a0b299218494') in 0.025213 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Textures/Ball Tex/billarodo ball.png
-  artifactKey: Guid(0c352c61100b14e4aa4cab2080ba86cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Ball Tex/billarodo ball.png using Guid(0c352c61100b14e4aa4cab2080ba86cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2d390d9054555179dcb49011f190639') in 0.026542 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Textures/Balls Shop/ball 14.png
-  artifactKey: Guid(2ba1ffdba72f44247a064f56213bbf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Balls Shop/ball 14.png using Guid(2ba1ffdba72f44247a064f56213bbf5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c77595c39a76f1c5b6f0c476638bc24a') in 0.027755 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Textures/Shop panel elements/background panel.png
-  artifactKey: Guid(0f86cc27a4e88b44baa9670e013e08c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Shop panel elements/background panel.png using Guid(0f86cc27a4e88b44baa9670e013e08c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '527f82c65bc3d039845eb2e11cb6955f') in 0.134750 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Textures/512x512.png
-  artifactKey: Guid(0f4e8065d1d400b48ad51f0375a033ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/512x512.png using Guid(0f4e8065d1d400b48ad51f0375a033ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9aeac7d97cd5db222e374d930b37176') in 0.026820 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Textures/512x512 1.png
-  artifactKey: Guid(1c48c56ac76197c4dad5f420336ad2af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/512x512 1.png using Guid(1c48c56ac76197c4dad5f420336ad2af) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2be053de886cc16f096f64c5f881535e') in 0.027885 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Textures/512x512 2.png
-  artifactKey: Guid(89f3768cc85179e4d96eda190584edc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/512x512 2.png using Guid(89f3768cc85179e4d96eda190584edc7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f706f34ff54173e9d67f2fb7c7869130') in 0.020847 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Textures/Ball Tex/3903.jpg
-  artifactKey: Guid(c97b3bf367b38ab4bbaf902560b23a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Ball Tex/3903.jpg using Guid(c97b3bf367b38ab4bbaf902560b23a47) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0625a109ff3a06008338bd97a9a234a6') in 0.165709 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Textures/Balls Shop/ball 1.png
-  artifactKey: Guid(498559cae9ddf1a4ba873b30b2bb96e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Balls Shop/ball 1.png using Guid(498559cae9ddf1a4ba873b30b2bb96e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76b76ffc0c866d9a890c83cd79778ef4') in 0.028770 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Textures/Balls Shop/ball 6.png
-  artifactKey: Guid(a2b61e9e7604f2e47bd0cafc9d8762d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Balls Shop/ball 6.png using Guid(a2b61e9e7604f2e47bd0cafc9d8762d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '261d63a9e3b40a60eeba2368905a790f') in 0.025418 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Textures/Balls Shop/ball 12.png
-  artifactKey: Guid(da8acd0548304994bae81fa007a92304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Balls Shop/ball 12.png using Guid(da8acd0548304994bae81fa007a92304) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e48923eb9201358087fbae633c90607b') in 0.029608 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Textures/Ball Tex/576.jpg
-  artifactKey: Guid(beed81d709dd49b4c8ca9090b4424d2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Ball Tex/576.jpg using Guid(beed81d709dd49b4c8ca9090b4424d2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '012ff57df82173bc39536fd23594e788') in 0.093481 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Textures/Balls Shop/ball 9.png
-  artifactKey: Guid(5effc218c3b003343be0335123103147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Balls Shop/ball 9.png using Guid(5effc218c3b003343be0335123103147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b53a6f7f924cabdc2508bafa1da47207') in 0.032258 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000036 seconds.
-  path: Assets/Textures/512x512 4.png
-  artifactKey: Guid(da64b9d4d5544384da411006cfd80132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/512x512 4.png using Guid(da64b9d4d5544384da411006cfd80132) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6db436bf7ca38a4476274d37a5772521') in 0.020451 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000044 seconds.
-  path: Assets/Textures/Balls Shop/ball 19.png
-  artifactKey: Guid(8ea4917db7f5498428b363efa2b0b3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Balls Shop/ball 19.png using Guid(8ea4917db7f5498428b363efa2b0b3a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '757eaf600dfcfcd03bba6862008636de') in 0.029775 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Textures/Balls Shop/ball 16.png
-  artifactKey: Guid(365fa780b8014fd44a91fed5e730f237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Balls Shop/ball 16.png using Guid(365fa780b8014fd44a91fed5e730f237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01b68ffe6e82592cf947f8eb09d8faea') in 0.029711 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Textures/Balls Shop/ball 5.png
-  artifactKey: Guid(178fa0c684b84e04aa72aa0240d149f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Balls Shop/ball 5.png using Guid(178fa0c684b84e04aa72aa0240d149f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bb5feaf80f89d29060debf578b360b3') in 0.030521 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Textures/Balls Shop/ball 11.png
-  artifactKey: Guid(dfafce3ae8299cc4e95809e5cece9a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Balls Shop/ball 11.png using Guid(dfafce3ae8299cc4e95809e5cece9a53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b0fdfc7374ce4cc3fcb1d97b4e053fc') in 0.023319 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Textures/ball icon.png
-  artifactKey: Guid(c79aa56cad41a304fb3591c331fe17f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/ball icon.png using Guid(c79aa56cad41a304fb3591c331fe17f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36c05192e2f25d583d9a71e506c9f1d5') in 0.021588 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/Textures/Balls Shop/ball 2.png
-  artifactKey: Guid(3eaebf1642576624f91e507193112370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Balls Shop/ball 2.png using Guid(3eaebf1642576624f91e507193112370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bb7a992a18b55595cf77fe701f2645f') in 0.024783 seconds 
+  Time since last request: 0.000145 seconds.
+  path: Assets/Scenes/Game/Lightmap-0_comp_light.exr
+  artifactKey: Guid(f579a464ab6dc10428346dbd641d4c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game/Lightmap-0_comp_light.exr using Guid(f579a464ab6dc10428346dbd641d4c69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acf218fd2ee0a0de10f631d1d35a0889') in 0.010399 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
   Time since last request: 0.000043 seconds.
-  path: Assets/Textures/Ball Tex/billarodo ball 4.png
-  artifactKey: Guid(5cdd7e29dd78ca5468527821a9c8fe7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Ball Tex/billarodo ball 4.png using Guid(5cdd7e29dd78ca5468527821a9c8fe7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b4bc2bbc5d5e1f36489ba38d6e58f64') in 0.023880 seconds 
+  path: Assets/Textures/Ball Tex/Lines.png
+  artifactKey: Guid(bdc06b2da70c2fb4591d60097fb6caa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Ball Tex/Lines.png using Guid(bdc06b2da70c2fb4591d60097fb6caa6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd12c91c82779d9005df2436a15d71c85') in 0.003097 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000048 seconds.
-  path: Assets/Textures/Ball Tex/arrow ball.png
-  artifactKey: Guid(45e25b106c3f1e249bbf960d5c0ba0c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Ball Tex/arrow ball.png using Guid(45e25b106c3f1e249bbf960d5c0ba0c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43c6dfda0abd59d53a3a40139e84f306') in 0.032623 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Textures/Balls Shop/ball 8.png
-  artifactKey: Guid(13455dbe4fcc9de42bd9e3d937bf4421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Balls Shop/ball 8.png using Guid(13455dbe4fcc9de42bd9e3d937bf4421) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fabb496ffd3f36d7fccd82c95eac4198') in 0.026212 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Textures/ad.png
-  artifactKey: Guid(9ca4ccf5da57e694f8bfe1c95d24153e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/ad.png using Guid(9ca4ccf5da57e694f8bfe1c95d24153e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59c89d094e368b995000d949007dc554') in 0.020199 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Textures/Balls Shop/ball 7.png
-  artifactKey: Guid(709eefc7c3686d44996db93a88907fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Balls Shop/ball 7.png using Guid(709eefc7c3686d44996db93a88907fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eebbf66933bce9da9fdb9dd4c383b37a') in 0.023165 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Textures/Ball Tex/7052.png
-  artifactKey: Guid(87e58e894f244eb4688e7f0f8c73812b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Ball Tex/7052.png using Guid(87e58e894f244eb4688e7f0f8c73812b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28e6c4d5322c3c0a28a80c2277f6b196') in 0.020103 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Textures/Balls Shop/ball 3.png
-  artifactKey: Guid(c26f6fbb742d99f4f8626e75d1485b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Balls Shop/ball 3.png using Guid(c26f6fbb742d99f4f8626e75d1485b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df7647b7885cb987e092e8e8f7d22fc1') in 0.022274 seconds 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 5.96 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 36 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (157.1 KB). Loaded Objects now: 4379.
-Memory consumption went from 77.8 MB to 77.7 MB.
-Total: 29.116000 ms (FindLiveObjects: 0.218300 ms CreateObjectMapping: 0.100700 ms MarkObjects: 28.533000 ms  DeleteObjects: 0.260600 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003244 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.52 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.Exception: Error! Visual Scripting: couldn't find visual scripting package
-  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
-  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
-  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
-  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
-  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
-  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
-  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
-  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
-  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
-  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.250 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1251ms)
-		BeginReloadAssembly (318ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (16ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (104ms)
-		EndReloadAssembly (865ms)
-			LoadAssemblies (65ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (224ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (29ms)
-			SetupLoadedEditorAssemblies (386ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (41ms)
-				ProcessInitializeOnLoadAttributes (302ms)
-				ProcessInitializeOnLoadMethodAttributes (22ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.93 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3842 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 36 unused Assets / (158.6 KB). Loaded Objects now: 4381.
-Memory consumption went from 153.6 MB to 153.5 MB.
-Total: 9.890900 ms (FindLiveObjects: 0.174300 ms CreateObjectMapping: 0.087900 ms MarkObjects: 9.487100 ms  DeleteObjects: 0.140400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 290.782649 seconds.
-  path: Assets/Scenes/Loading.unity
-  artifactKey: Guid(85d4df66ecf35df4daf5fb74d34ed7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Loading.unity using Guid(85d4df66ecf35df4daf5fb74d34ed7a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7086b613bfa9b96784d7ae712c69bf26') in 0.013568 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.636552 seconds.
-  path: Assets/Materials/Ball Materials/Ball 6.mat
-  artifactKey: Guid(a7af0bb1b5ed9b24fab4e9341e14a0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Ball Materials/Ball 6.mat using Guid(a7af0bb1b5ed9b24fab4e9341e14a0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2672677804bca72b8c74c4ef66ced1c0') in 0.092476 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Materials/Simple Toon/Demo/Materials/DemoMat7.mat
-  artifactKey: Guid(6accb9ec6153947cbae3f2aff1e3c866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Simple Toon/Demo/Materials/DemoMat7.mat using Guid(6accb9ec6153947cbae3f2aff1e3c866) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c1a2301565fbeb4b0a61c6cb13dc200') in 0.010158 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Materials/Cylinders Materials/Cylider 10.mat
-  artifactKey: Guid(a2188db47ee5dda4e8b2c1f467c9f865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Cylinders Materials/Cylider 10.mat using Guid(a2188db47ee5dda4e8b2c1f467c9f865) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47222aba681846f2dc725aeabed99c6c') in 0.009899 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000049 seconds.
-  path: Assets/Materials/Simple Toon/Demo/Materials/DemoMat0.mat
-  artifactKey: Guid(89da178192942474cb10e6ba8737a6a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Simple Toon/Demo/Materials/DemoMat0.mat using Guid(89da178192942474cb10e6ba8737a6a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aecbff9f1820f51a4d6c03a7ff59301') in 0.009849 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Materials/Cylinders Materials/Cylider 2.mat
-  artifactKey: Guid(e4334298c7834f840af704efdfb8a615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Cylinders Materials/Cylider 2.mat using Guid(e4334298c7834f840af704efdfb8a615) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8eae916fff6d1e60c3d4593f5759228d') in 0.008973 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Materials/Simple Toon/Demo/Materials/DemoMat2.mat
-  artifactKey: Guid(ef2d2a3b39a22469989c5a63af9227e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Simple Toon/Demo/Materials/DemoMat2.mat using Guid(ef2d2a3b39a22469989c5a63af9227e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd093717dbddbf0f1593c3b98787700b4') in 0.010118 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Materials/Simple Toon/Demo/Materials/DemoMat6.mat
-  artifactKey: Guid(c22ff6e5c9f8b4657806a92e2de34fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Simple Toon/Demo/Materials/DemoMat6.mat using Guid(c22ff6e5c9f8b4657806a92e2de34fd9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6a3b7e21e69118c0f7fd92b8cb0f57a') in 0.008353 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Materials/Ball Materials/Ball 16.mat
-  artifactKey: Guid(6b1ccd419d9b90e47bb47c40fa48c43f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Ball Materials/Ball 16.mat using Guid(6b1ccd419d9b90e47bb47c40fa48c43f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e60183ebe3331a506af41635a43ba54d') in 0.025410 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/TextMesh Pro/Fonts/Poppins-ExtraBold 1.ttf
-  artifactKey: Guid(f3f0b3c7ace1b5c45bcf1357cb3266ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Fonts/Poppins-ExtraBold 1.ttf using Guid(f3f0b3c7ace1b5c45bcf1357cb3266ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc5375fef1b277db2e6a75c9fbf6aaec') in 0.069270 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Materials/Ball Materials/Ball 11.mat
-  artifactKey: Guid(5e8049121cfc293498b8dc46f5334c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Ball Materials/Ball 11.mat using Guid(5e8049121cfc293498b8dc46f5334c9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c96086c4d75168a0dffddad784698ea') in 0.019598 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Materials/Cylinders Materials/Cylider 3.mat
-  artifactKey: Guid(ed7b72d48a4fd614cab06eea95af432d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Cylinders Materials/Cylider 3.mat using Guid(ed7b72d48a4fd614cab06eea95af432d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c6901737d0c777aee5b11308600f581') in 0.013234 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Materials/Ball Materials/Ball 7.mat
-  artifactKey: Guid(290e070cf747ced4198d13d0528f3ff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Ball Materials/Ball 7.mat using Guid(290e070cf747ced4198d13d0528f3ff1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82de87189cf7a9e128ba159c9a2f92af') in 0.013596 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/TextMesh Pro/Fonts/Bumpo SDF.asset
-  artifactKey: Guid(e2b2ec644019d1b4d997895607e953c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Fonts/Bumpo SDF.asset using Guid(e2b2ec644019d1b4d997895607e953c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a420bb5c8ed5fb51892246bd9c4c19c9') in 0.039390 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Materials/Simple Toon/Demo/Materials/DemoMat1.mat
-  artifactKey: Guid(8ed6be4d200f44763bb6a52ceb413920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Simple Toon/Demo/Materials/DemoMat1.mat using Guid(8ed6be4d200f44763bb6a52ceb413920) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '681e112300ff73aa1fd54135e27344ae') in 0.011904 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Materials/Ball Materials/Ball 10.mat
-  artifactKey: Guid(8244e181f52a75148bc54a13747c6a39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Ball Materials/Ball 10.mat using Guid(8244e181f52a75148bc54a13747c6a39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac8e422d56b1c26319dd7545de3d655c') in 0.013136 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Materials/Ball Materials/Ball 13.mat
-  artifactKey: Guid(192e3b0f7349ad24f88e92f6bc4885e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Ball Materials/Ball 13.mat using Guid(192e3b0f7349ad24f88e92f6bc4885e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dad620eff322aee34dcf1b50a98071d') in 0.016260 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Materials/Cylinders Materials/Cylider 4.mat
-  artifactKey: Guid(423c55e63476da54cbc8ffde952daef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Cylinders Materials/Cylider 4.mat using Guid(423c55e63476da54cbc8ffde952daef8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a36b33c3a3bfcf28b81fd31b817662ab') in 0.009732 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Materials/Cylinders Materials/Cylider 9.mat
-  artifactKey: Guid(1c57c8f9dd5753b4ba0133ff36a69903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Cylinders Materials/Cylider 9.mat using Guid(1c57c8f9dd5753b4ba0133ff36a69903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '693df47a62df14b7b8a09e7f8fbea7c4') in 0.009718 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Materials/Cylinders Materials/Cylider 5.mat
-  artifactKey: Guid(b67441964a16e814c949c9e873bcf2df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Cylinders Materials/Cylider 5.mat using Guid(b67441964a16e814c949c9e873bcf2df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ee1b87f9909c396aa3834d4cc13a98a') in 0.009515 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
-  artifactKey: Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat using Guid(79459efec17a4d00a321bdcc27bbc385) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c867617c074b8619b214d05038a3778') in 0.024162 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Materials/Cylinders Materials/Cylider 1.mat
-  artifactKey: Guid(15b0e1c0832031e49b84d2bf1911407d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Cylinders Materials/Cylider 1.mat using Guid(15b0e1c0832031e49b84d2bf1911407d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5ba0e628f2c36a1a3d7b37777293b90') in 0.009569 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000037 seconds.
+  Time since last request: 0.707082 seconds.
   path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
   artifactKey: Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a26fe26591f45b877e56a33d7917bd4e') in 0.018108 seconds 
+Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset using Guid(2e498d1c8094910479dc3e1b768306a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc0da6673aa0b5de0273c53afecc5bd5') in 0.012089 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
-  artifactKey: Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat using Guid(e73a58f6e2794ae7b1b7e50b7fb811b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59f4485b4f63e19bfee24a91ae04eaf2') in 0.021518 seconds 
+  Time since last request: 0.000775 seconds.
+  path: Assets/Scenes/Game/Lightmap-0_comp_dir.png
+  artifactKey: Guid(eae433aa42702e640b09ad1caeee83a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Game/Lightmap-0_comp_dir.png using Guid(eae433aa42702e640b09ad1caeee83a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76f3e22edb3aed747984492b87660281') in 0.006724 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Materials/Simple Toon/Demo/Models/Chamber.fbx
-  artifactKey: Guid(450ff0f9365254b03ac5bf72cb36923a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Simple Toon/Demo/Models/Chamber.fbx using Guid(450ff0f9365254b03ac5bf72cb36923a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd26ea0f3471e9a68c126caae2ad9475a') in 0.079586 seconds 
+  Time since last request: 0.027694 seconds.
+  path: Assets/TextMesh Pro/Sprites/EmojiOne.png
+  artifactKey: Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/TextMesh Pro/Sprites/EmojiOne.png using Guid(dffef66376be4fa480fb02b19edbe903) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69132cd3cc965e7811ccfd64835541d9') in 0.004283 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Materials/Ball Materials/Ball 18.mat
-  artifactKey: Guid(85c6bed6e8f47a44f9d0669a373faa88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Ball Materials/Ball 18.mat using Guid(85c6bed6e8f47a44f9d0669a373faa88) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '139f6b9f8cfbb3c2a16e4258fc01dd3c') in 0.018163 seconds 
+  Time since last request: 0.000066 seconds.
+  path: Assets/Textures/Ball Tex/Firefly more than 3030 black diagonal lines over white background texture for game 44227.jpg
+  artifactKey: Guid(e9e2a4c4d42cb854cbce604f8869de7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Ball Tex/Firefly more than 3030 black diagonal lines over white background texture for game 44227.jpg using Guid(e9e2a4c4d42cb854cbce604f8869de7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c327249a1bedf1513a3e688cae58d29d') in 0.004092 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Materials/Simple Toon/Demo/Materials/DemoMat5.mat
-  artifactKey: Guid(c36a57e577ad1419ca9f179fa166c5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Simple Toon/Demo/Materials/DemoMat5.mat using Guid(c36a57e577ad1419ca9f179fa166c5ac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15b9c815e4457186076121f075e977a4') in 0.013244 seconds 
+  Time since last request: 0.028644 seconds.
+  path: Assets/Textures/ad.png
+  artifactKey: Guid(9ca4ccf5da57e694f8bfe1c95d24153e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/ad.png using Guid(9ca4ccf5da57e694f8bfe1c95d24153e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b692a0617c0757160a7383588631440f') in 0.003539 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000023 seconds.
-  path: Assets/Materials/Ball Materials/Ball 12.mat
-  artifactKey: Guid(37314fcd11746864fae0efe780a6c927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Ball Materials/Ball 12.mat using Guid(37314fcd11746864fae0efe780a6c927) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43a7c89c45fd4d65ce915124a340386f') in 0.019352 seconds 
+  Time since last request: 0.000086 seconds.
+  path: Assets/Textures/Balls Shop/ball 4.png
+  artifactKey: Guid(6540570b25082234b8ddc0d9f68d3dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Balls Shop/ball 4.png using Guid(6540570b25082234b8ddc0d9f68d3dc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b88c9e809b57f9cafffc1e253777916b') in 0.003716 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/Materials/Cylinders Materials/Cylider 8.mat
-  artifactKey: Guid(46e2cd4eeed26fc4a88f9172a909705c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Cylinders Materials/Cylider 8.mat using Guid(46e2cd4eeed26fc4a88f9172a909705c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1228d47e6d3ad51960b1fa762c80dc3b') in 0.009534 seconds 
+  Time since last request: 0.000045 seconds.
+  path: Assets/Textures/Shop panel elements/background panel.png
+  artifactKey: Guid(0f86cc27a4e88b44baa9670e013e08c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Shop panel elements/background panel.png using Guid(0f86cc27a4e88b44baa9670e013e08c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aafa0fd6515b9048ad9414be67fbc5ff') in 0.002817 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Materials/Ball Materials/Ball 15.mat
-  artifactKey: Guid(7cdb3064dba14654f84448a90f677193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Ball Materials/Ball 15.mat using Guid(7cdb3064dba14654f84448a90f677193) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '763166df7370d98cdb15827afe9a2217') in 0.014531 seconds 
+  Time since last request: 0.000077 seconds.
+  path: Assets/Textures/Balls Shop/ball 6.png
+  artifactKey: Guid(a2b61e9e7604f2e47bd0cafc9d8762d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Balls Shop/ball 6.png using Guid(a2b61e9e7604f2e47bd0cafc9d8762d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e8bd25a763270a77789b7675e3913f0') in 0.003672 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000026 seconds.
-  path: Assets/Materials/Ball Materials/Ball 8.mat
-  artifactKey: Guid(17629ab259693b4418e3ccca4dab8f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Ball Materials/Ball 8.mat using Guid(17629ab259693b4418e3ccca4dab8f16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73884d888bf7f6bebdb6f8a6bd1d1b74') in 0.012327 seconds 
+  Time since last request: 0.000178 seconds.
+  path: Assets/Textures/Game-icon/114 x 114.png
+  artifactKey: Guid(fc4a44581fbd5454b89dd96505517c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Game-icon/114 x 114.png using Guid(fc4a44581fbd5454b89dd96505517c18) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ebc27a6f0e0be3a6d7a914f09e46c46') in 0.002257 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Materials/Ball Materials/Ball 19.mat
-  artifactKey: Guid(1d08cff3a923bd543b4958721822a19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Ball Materials/Ball 19.mat using Guid(1d08cff3a923bd543b4958721822a19d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97777a804d23147c037d81a7fba827d6') in 0.015894 seconds 
+  Time since last request: 0.000051 seconds.
+  path: Assets/Textures/Game-icon/512 x 512.png
+  artifactKey: Guid(b4bae62dad00dfc478a44a1e1415723d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Game-icon/512 x 512.png using Guid(b4bae62dad00dfc478a44a1e1415723d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14ced103d3c4bbeb925d5704366863a2') in 0.002942 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Materials/Ball Materials/Ball 9.mat
-  artifactKey: Guid(d079aa43ebd8c714cb1014edadddc2f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Ball Materials/Ball 9.mat using Guid(d079aa43ebd8c714cb1014edadddc2f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'add0cea2b5841bcec35fb47ea2f0bcb1') in 0.015324 seconds 
+  Time since last request: 0.000097 seconds.
+  path: Assets/Textures/Balls Shop/ball 5.png
+  artifactKey: Guid(178fa0c684b84e04aa72aa0240d149f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Balls Shop/ball 5.png using Guid(178fa0c684b84e04aa72aa0240d149f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3409889c34ed2855d53ea98e58839b9') in 0.003401 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Materials/Cylinders Materials/Cylider 6.mat
-  artifactKey: Guid(9441737346066f444a86a65b65b041b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Cylinders Materials/Cylider 6.mat using Guid(9441737346066f444a86a65b65b041b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0173c196aabba3a81ddcb5b21e37c964') in 0.009906 seconds 
+  Time since last request: 0.000085 seconds.
+  path: Assets/Textures/Balls Shop/ball 2.png
+  artifactKey: Guid(3eaebf1642576624f91e507193112370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Balls Shop/ball 2.png using Guid(3eaebf1642576624f91e507193112370) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51252cc5436b52456b1c60d04aeb8372') in 0.004143 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/TextMesh Pro/Fonts/Bumpo.ttf
-  artifactKey: Guid(6f977c22161bfa24e9b0dd6a0b5ae5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Fonts/Bumpo.ttf using Guid(6f977c22161bfa24e9b0dd6a0b5ae5e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1e2567b721d7044bff1cb82707cd280') in 0.013258 seconds 
+  Time since last request: 0.000073 seconds.
+  path: Assets/Textures/Balls Shop/ball 7.png
+  artifactKey: Guid(709eefc7c3686d44996db93a88907fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Balls Shop/ball 7.png using Guid(709eefc7c3686d44996db93a88907fd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fa8e8d7c6a925d1c72e2e28c2f1d02f') in 0.003395 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Materials/Simple Toon/Demo/Materials/DemoMat4.mat
-  artifactKey: Guid(e1adb895fb1b74ee5aa46f68b67ab432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Simple Toon/Demo/Materials/DemoMat4.mat using Guid(e1adb895fb1b74ee5aa46f68b67ab432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e5fcc506b86093f77dd41f2b746e796') in 0.009311 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Materials/EndPoint.mat
-  artifactKey: Guid(149da6a7afd63cc41a276f1bc71c1002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/EndPoint.mat using Guid(149da6a7afd63cc41a276f1bc71c1002) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd81db9dd517b4fa8def7bedcb4cbb89b') in 0.010583 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
-  artifactKey: Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset using Guid(8f586378b4e144a9851e7b34d9b748ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf9705544f6978c9a114dd7107139f31') in 0.026263 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Materials/Ball Materials/Ball 14.mat
-  artifactKey: Guid(0e998494636402d48899afaf4ac710e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Ball Materials/Ball 14.mat using Guid(0e998494636402d48899afaf4ac710e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df687aa8055daf5a13d75aec6fbbb37a') in 0.015138 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000106 seconds.
-  path: Assets/Materials/Ball Materials/Ball 17.mat
-  artifactKey: Guid(433735b4c776fc74ab77ab799043461b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Ball Materials/Ball 17.mat using Guid(433735b4c776fc74ab77ab799043461b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '71f9e874fe51fd8ff8adfa54286fddcd') in 0.012999 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Materials/Cylinders Materials/Cylider 7.mat
-  artifactKey: Guid(6d16491cbb7a19e4d91416bd79824a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Cylinders Materials/Cylider 7.mat using Guid(6d16491cbb7a19e4d91416bd79824a02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d9a9f32bfe7bb3cd07ffb83eaa56c96') in 0.012374 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000035 seconds.
-  path: Assets/Materials/Simple Toon/Demo/Models/Bear.fbx
-  artifactKey: Guid(55534b674e1ad4e9988d9be64c8ed52a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Simple Toon/Demo/Models/Bear.fbx using Guid(55534b674e1ad4e9988d9be64c8ed52a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ae228c8e1929be7561a68990e083007') in 0.027130 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Materials/Simple Toon/Demo/Materials/DemoMat3.mat
-  artifactKey: Guid(455d9beda8a1a4fddb5c283861efccb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Simple Toon/Demo/Materials/DemoMat3.mat using Guid(455d9beda8a1a4fddb5c283861efccb0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16ad2f1a2f705bb4e263c558a643fc45') in 0.010934 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.242624 seconds.
-  path: Assets/Materials/Ball Materials/Ball.mat
-  artifactKey: Guid(416a03e8fbb85cc4489eb1857a3bddfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Ball Materials/Ball.mat using Guid(416a03e8fbb85cc4489eb1857a3bddfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3485530f220ae71ed4c4953db1beb39') in 0.012122 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Materials/Ball Materials/Ball 4.mat
-  artifactKey: Guid(bfaac74ec09ecf74494514074f69eb37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Ball Materials/Ball 4.mat using Guid(bfaac74ec09ecf74494514074f69eb37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c33ae8234d1f064143fd31e1dbc8a10') in 0.015699 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Materials/Ball Materials/Ball 5.mat
-  artifactKey: Guid(4ba333c7299a6354b836c6bf2e6b2eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Ball Materials/Ball 5.mat using Guid(4ba333c7299a6354b836c6bf2e6b2eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd23694038dc5aedba2f2daa9d1ad9222') in 0.028572 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Materials/Ball Materials/Ball 2.mat
-  artifactKey: Guid(774d9c67db334e54284e8350ee2806a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Ball Materials/Ball 2.mat using Guid(774d9c67db334e54284e8350ee2806a3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e01797b72e7da75b64ca86a4e8c58a2') in 0.011660 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Materials/Ball Materials/Ball 1.mat
-  artifactKey: Guid(164913409e1cde24da87db737614f583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Ball Materials/Ball 1.mat using Guid(164913409e1cde24da87db737614f583) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6733f01e438ead212ccb6a5a7368020') in 0.022268 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000025 seconds.
-  path: Assets/Materials/Ball Materials/Ball 3.mat
-  artifactKey: Guid(f6b1f4820deafeb4e8e6581668147ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Ball Materials/Ball 3.mat using Guid(f6b1f4820deafeb4e8e6581668147ea7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb5e044c653a1d47ccef7d0e517a2653') in 0.011074 seconds 
+  Time since last request: 0.000081 seconds.
+  path: Assets/Textures/Balls Shop/ball 3.png
+  artifactKey: Guid(c26f6fbb742d99f4f8626e75d1485b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Balls Shop/ball 3.png using Guid(c26f6fbb742d99f4f8626e75d1485b72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b2cc8b06e767f29aba683e2d1e5da78') in 0.005106 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
 ========================================================================
 Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002534 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image C:\Users\imham\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\imham\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.922 seconds
+Refreshing native plugins compatible for Editor in 5.45 ms, found 3 plugins.
 Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 1.03 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Native extension for WindowsStandalone target not found
 System.Exception: Error! Visual Scripting: couldn't find visual scripting package
-  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
-  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
-  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
-  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
-  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
-  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
-  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
-  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
-  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
-  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
 UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 Mono: successfully reloaded assembly
-- Completed reload, in  1.453 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1454ms)
-		BeginReloadAssembly (145ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (42ms)
-		EndReloadAssembly (1232ms)
-			LoadAssemblies (87ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (311ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (40ms)
-			SetupLoadedEditorAssemblies (572ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (26ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (60ms)
-				ProcessInitializeOnLoadAttributes (439ms)
-				ProcessInitializeOnLoadMethodAttributes (39ms)
-				AfterProcessingInitializeOnLoad (5ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (8ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 3.26 ms, found 3 plugins.
+- Finished resetting the current domain, in  2.231 seconds
+Domain Reload Profiling: 3149ms
+	BeginReloadAssembly (177ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (6ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (50ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (23ms)
+	LoadAllAssembliesAndSetupDomain (681ms)
+		LoadAssemblies (338ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (418ms)
+			TypeCache.Refresh (406ms)
+				TypeCache.ScanAssembly (393ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (11ms)
+	FinalizeReload (2231ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (620ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (20ms)
+			SetLoadedEditorAssemblies (3ms)
+			BeforeProcessingInitializeOnLoad (102ms)
+			ProcessInitializeOnLoadAttributes (467ms)
+			ProcessInitializeOnLoadMethodAttributes (24ms)
+			AfterProcessingInitializeOnLoad (4ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (10ms)
+Refreshing native plugins compatible for Editor in 5.91 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3842 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (159.7 KB). Loaded Objects now: 4429.
-Memory consumption went from 153.8 MB to 153.6 MB.
-Total: 10.408400 ms (FindLiveObjects: 0.217400 ms CreateObjectMapping: 0.102700 ms MarkObjects: 9.922100 ms  DeleteObjects: 0.165100 ms)
+Unloading 5509 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (1.9 MB). Loaded Objects now: 6226.
+Memory consumption went from 197.8 MB to 196.0 MB.
+Total: 12.628500 ms (FindLiveObjects: 0.273400 ms CreateObjectMapping: 0.253900 ms MarkObjects: 11.730200 ms  DeleteObjects: 0.369000 ms)
 
+Prepare: number of updated asset objects reloaded= 1
 AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/AotStubs.cs: 8104ef23ce41919efeb4e43bde99df30 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 89.455351 seconds.
-  path: Assets/Materials/Ball Materials
-  artifactKey: Guid(52f7435e4d9af464c812e542a64695f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Materials/Ball Materials using Guid(52f7435e4d9af464c812e542a64695f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c9e8da5e8b9765f019ee84145cad6ef') in 0.012053 seconds 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
 ========================================================================
 Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.003448 seconds.
 Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
+Symbol file LoadedFromMemory doesn't match image C:\Users\imham\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\imham\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  1.530 seconds
+Refreshing native plugins compatible for Editor in 6.87 ms, found 3 plugins.
 Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
+Native extension for WindowsStandalone target not found
 System.Exception: Error! Visual Scripting: couldn't find visual scripting package
-  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
-  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
-  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
-  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
-  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
-  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
-  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
-  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
-  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
-  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
+  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
+  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
+  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
+  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
+  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
+  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
+  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
+  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
+  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
+  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in .\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
 UnityEngine.StackTraceUtility:ExtractStackTrace ()
+UnityEngine.DebugLogHandler:Internal_Log (UnityEngine.LogType,UnityEngine.LogOption,string,UnityEngine.Object)
 UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
 UnityEngine.Logger:Log (UnityEngine.LogType,object)
 UnityEngine.Debug:LogError (object)
 UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
 
 Mono: successfully reloaded assembly
-- Completed reload, in  0.986 seconds
-Domain Reload Profiling:
-	ReloadAssembly (986ms)
-		BeginReloadAssembly (113ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (802ms)
-			LoadAssemblies (63ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (182ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (28ms)
-			SetupLoadedEditorAssemblies (396ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (41ms)
-				ProcessInitializeOnLoadAttributes (314ms)
-				ProcessInitializeOnLoadMethodAttributes (22ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.32 ms, found 3 plugins.
+- Finished resetting the current domain, in  2.452 seconds
+Domain Reload Profiling: 3979ms
+	BeginReloadAssembly (455ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (29ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (1ms)
+		CreateAndSetChildDomain (192ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (33ms)
+	LoadAllAssembliesAndSetupDomain (995ms)
+		LoadAssemblies (551ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (543ms)
+			TypeCache.Refresh (529ms)
+				TypeCache.ScanAssembly (446ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (13ms)
+	FinalizeReload (2452ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (461ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (16ms)
+			SetLoadedEditorAssemblies (4ms)
+			BeforeProcessingInitializeOnLoad (75ms)
+			ProcessInitializeOnLoadAttributes (346ms)
+			ProcessInitializeOnLoadMethodAttributes (17ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 4.39 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3842 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (159.6 KB). Loaded Objects now: 4433.
-Memory consumption went from 153.8 MB to 153.7 MB.
-Total: 8.534000 ms (FindLiveObjects: 0.215200 ms CreateObjectMapping: 0.095000 ms MarkObjects: 8.101700 ms  DeleteObjects: 0.120200 ms)
+Unloading 5509 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 57 unused Assets / (1.9 MB). Loaded Objects now: 6232.
+Memory consumption went from 198.9 MB to 197.0 MB.
+Total: 13.546000 ms (FindLiveObjects: 0.364500 ms CreateObjectMapping: 0.175600 ms MarkObjects: 12.616700 ms  DeleteObjects: 0.387100 ms)
 
+Prepare: number of updated asset objects reloaded= 1
 AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/AotStubs.cs: 8104ef23ce41919efeb4e43bde99df30 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
   custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002627 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.63 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.Exception: Error! Visual Scripting: couldn't find visual scripting package
-  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
-  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
-  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
-  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
-  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
-  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
-  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
-  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
-  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
-  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.004 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1005ms)
-		BeginReloadAssembly (107ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (28ms)
-		EndReloadAssembly (826ms)
-			LoadAssemblies (59ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (184ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (405ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (17ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (49ms)
-				ProcessInitializeOnLoadAttributes (314ms)
-				ProcessInitializeOnLoadMethodAttributes (21ms)
-				AfterProcessingInitializeOnLoad (4ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.00 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3842 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (158.7 KB). Loaded Objects now: 4437.
-Memory consumption went from 153.8 MB to 153.7 MB.
-Total: 9.628900 ms (FindLiveObjects: 0.298200 ms CreateObjectMapping: 0.175100 ms MarkObjects: 9.023400 ms  DeleteObjects: 0.131100 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
   custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002541 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.70 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.Exception: Error! Visual Scripting: couldn't find visual scripting package
-  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
-  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
-  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
-  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
-  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
-  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
-  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
-  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
-  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
-  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.968 seconds
-Domain Reload Profiling:
-	ReloadAssembly (969ms)
-		BeginReloadAssembly (106ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (798ms)
-			LoadAssemblies (54ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (181ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (34ms)
-			SetupLoadedEditorAssemblies (381ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (19ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (47ms)
-				ProcessInitializeOnLoadAttributes (292ms)
-				ProcessInitializeOnLoadMethodAttributes (18ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.16 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3842 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (158.5 KB). Loaded Objects now: 4441.
-Memory consumption went from 153.8 MB to 153.7 MB.
-Total: 10.023000 ms (FindLiveObjects: 0.271900 ms CreateObjectMapping: 0.160100 ms MarkObjects: 9.461700 ms  DeleteObjects: 0.128400 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 366.732439 seconds.
-  path: Assets/Textures/screenshot.png
-  artifactKey: Guid(27b75c42cbd343a45ac9058722d8bb55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/screenshot.png using Guid(27b75c42cbd343a45ac9058722d8bb55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae8a46b86082eacd2b16335cd15fb4ac') in 0.092178 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.963444 seconds.
-  path: Assets/Textures/screenshot.png
-  artifactKey: Guid(27b75c42cbd343a45ac9058722d8bb55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/screenshot.png using Guid(27b75c42cbd343a45ac9058722d8bb55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0590cfe9edcd8a3a4b88a0864a3ae881') in 0.044727 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002795 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.58 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.Exception: Error! Visual Scripting: couldn't find visual scripting package
-  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
-  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
-  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
-  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
-  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
-  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
-  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
-  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
-  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
-  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.951 seconds
-Domain Reload Profiling:
-	ReloadAssembly (951ms)
-		BeginReloadAssembly (104ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (31ms)
-		EndReloadAssembly (781ms)
-			LoadAssemblies (54ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (171ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (371ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (14ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (44ms)
-				ProcessInitializeOnLoadAttributes (292ms)
-				ProcessInitializeOnLoadMethodAttributes (16ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.61 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3842 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (158.8 KB). Loaded Objects now: 4446.
-Memory consumption went from 153.9 MB to 153.7 MB.
-Total: 9.299900 ms (FindLiveObjects: 0.214900 ms CreateObjectMapping: 0.095300 ms MarkObjects: 8.806000 ms  DeleteObjects: 0.182300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 280.475911 seconds.
-  path: Assets/Textures/Balls Shop/ball 9.png
-  artifactKey: Guid(5effc218c3b003343be0335123103147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Textures/Balls Shop/ball 9.png using Guid(5effc218c3b003343be0335123103147) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fde2047b442737cc9584b9c708a5c72') in 0.067574 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002655 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.49 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.Exception: Error! Visual Scripting: couldn't find visual scripting package
-  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
-  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
-  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
-  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
-  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
-  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
-  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
-  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
-  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
-  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  0.956 seconds
-Domain Reload Profiling:
-	ReloadAssembly (956ms)
-		BeginReloadAssembly (108ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (3ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (29ms)
-		EndReloadAssembly (776ms)
-			LoadAssemblies (58ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (164ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (33ms)
-			SetupLoadedEditorAssemblies (369ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (15ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (44ms)
-				ProcessInitializeOnLoadAttributes (286ms)
-				ProcessInitializeOnLoadMethodAttributes (20ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (4ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 2.25 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3842 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (158.7 KB). Loaded Objects now: 4450.
-Memory consumption went from 153.9 MB to 153.8 MB.
-Total: 12.485200 ms (FindLiveObjects: 0.316900 ms CreateObjectMapping: 0.953300 ms MarkObjects: 11.078300 ms  DeleteObjects: 0.135500 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 3.95 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 36 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (156.2 KB). Loaded Objects now: 4451.
-Memory consumption went from 78.3 MB to 78.2 MB.
-Total: 9.271700 ms (FindLiveObjects: 0.197100 ms CreateObjectMapping: 0.088300 ms MarkObjects: 8.855100 ms  DeleteObjects: 0.129900 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.002701 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.87 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-System.Exception: Error! Visual Scripting: couldn't find visual scripting package
-  at Unity.VisualScripting.PackageVersionUtility.get_version () [0x00043] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\PackageVersionUtility.cs:31 
-  at Unity.VisualScripting.BoltCoreManifest.get_version () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugin\BoltCoreManifest.cs:11 
-  at Unity.VisualScripting.PluginManifest.get_currentVersion () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:33 
-  at Unity.VisualScripting.PluginManifest.get_versionMismatch () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginManifest.cs:48 
-  at Unity.VisualScripting.PluginContainer.Initialize () [0x00525] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:208 
-  at Unity.VisualScripting.PluginContainer.InitializeOnLoad () [0x00009] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Plugins\PluginContainer.cs:32 
-  at Unity.VisualScripting.VSUsageUtility.DoInitializeOnLoadCalls () [0x00034] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:76 
-  at Unity.VisualScripting.VSUsageUtility.set_isVisualScriptingUsed (System.Boolean value) [0x0002c] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:114 
-  at Unity.VisualScripting.VSUsageUtility.CheckAndSetIsVisualScriptingUsed () [0x0000d] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:33 
-  at Unity.VisualScripting.VSUsageUtility..cctor () [0x00000] in C:\Users\GIGABYTE\Desktop\Projects\Unity\Roller-Ball\Roller Ball\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Utilities\VSUsageUtility.cs:22 
-UnityEngine.StackTraceUtility:ExtractStackTrace ()
-UnityEngine.DebugLogHandler:LogFormat (UnityEngine.LogType,UnityEngine.Object,string,object[])
-UnityEngine.Logger:Log (UnityEngine.LogType,object)
-UnityEngine.Debug:LogError (object)
-UnityEditor.EditorAssemblies:ProcessInitializeOnLoadAttributes (System.Type[])
-
-Mono: successfully reloaded assembly
-- Completed reload, in  1.000 seconds
-Domain Reload Profiling:
-	ReloadAssembly (1001ms)
-		BeginReloadAssembly (146ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (4ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (42ms)
-		EndReloadAssembly (788ms)
-			LoadAssemblies (78ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (185ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (25ms)
-			SetupLoadedEditorAssemblies (373ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (18ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (49ms)
-				ProcessInitializeOnLoadAttributes (281ms)
-				ProcessInitializeOnLoadMethodAttributes (21ms)
-				AfterProcessingInitializeOnLoad (3ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (5ms)
-Platform modules already initialized, skipping
-Refreshing native plugins compatible for Editor in 1.88 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3842 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 36 unused Assets / (159.6 KB). Loaded Objects now: 4454.
-Memory consumption went from 154.5 MB to 154.3 MB.
-Total: 8.100600 ms (FindLiveObjects: 0.190100 ms CreateObjectMapping: 0.083800 ms MarkObjects: 7.709800 ms  DeleteObjects: 0.115700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
