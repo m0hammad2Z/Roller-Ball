@@ -47,7 +47,7 @@ Material:
     m_Ints: []
     m_Floats:
     - _H: 0.1
-    - _IsVertical_Move: 1
+    - _IsVertical_Move: 0
     - _LineH: 0.08
     - _LineW: 1
     - _Number_of_lines: 20.9
