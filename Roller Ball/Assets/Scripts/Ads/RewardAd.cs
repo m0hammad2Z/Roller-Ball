@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.Advertisements;
 using System.Collections;
 using TMPro;
+using System;
 
 public class RewardAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListener
 {
@@ -17,6 +18,9 @@ public class RewardAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListe
     public GameManager gameManager;
     public ShopSystem shopSystem;
 
+    private bool adLoaded = false;
+    private bool isClicked = false;
+    public float t;
     void Awake()
     {
         // Get the Ad Unit ID for the current platform:
@@ -32,40 +36,71 @@ public class RewardAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListe
 
     void Start()
     {
-        _showAdButton.onClick.AddListener(LoadAd);
+        LoadAd();
+    }
+
+    void Update()
+    {
+        t += 1 * Time.unscaledDeltaTime;
+
+        if (t >= 4f && !adLoaded && isClicked)
+        {
+            _showAdButton.interactable = true;
+            _ShowAndroidToastMessage($"Ad failed to load, check you connection");
+            t = 0;
+            isClicked = false;
+        }
     }
 
     // Load content to the Ad Unit:
     public void LoadAd()
     {
-        // IMPORTANT! Only load content AFTER initialization (in this example, initialization is handled in a different script).
-        Debug.Log("Loading Ad: " + _adUnitId);
-        Advertisement.Load(_adUnitId, this);
+        adLoaded = false;
+        if (_adUnitId != null)
+        {
+            try
+            {
+                Advertisement.Load(_adUnitId, this);
+                _showAdButton.onClick.AddListener(ShowAd);
+            }
+            catch (Exception e)
+            {
+                _ShowAndroidToastMessage($"Ad failed to load., check you connection");
+                return;
+            }
+        }
+        else
+        {
+            _ShowAndroidToastMessage($"Can't load ad, check you connection");
+        }
     }
+
+
 
     // If the ad successfully loads, add a listener to the button and enable it:
     public void OnUnityAdsAdLoaded(string adUnitId)
     {
-        Debug.Log("Ad Loaded: " + adUnitId);
+        adLoaded = true;
         x = 0;
-        if (adUnitId.Equals(_adUnitId))
-        {
-            // Configure the button to call the ShowAd() method when clicked:
-            ShowAd();
-            // Enable the button for users to click:
-            _showAdButton.interactable = true;
-
-            _ShowAndroidToastMessage("Loaded");
-        }
     }
 
     // Implement a method to execute when the user clicks the button:
     public void ShowAd()
-    {
-        // Disable the button:
+    {        
+        _ShowAndroidToastMessage("Loading");
         _showAdButton.interactable = false;
-        // Then show the ad:
-        Advertisement.Show(_adUnitId, this);
+        t = 0;
+        isClicked = true;
+
+        try
+        {
+            Advertisement.Show(_adUnitId, this);
+        }
+        catch (Exception e)
+        {
+            _ShowAndroidToastMessage($"failed to show ad, check you connection");
+        }
+        
     }
 
 
@@ -73,8 +108,6 @@ public class RewardAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListe
     public void OnUnityAdsFailedToLoad(string adUnitId, UnityAdsLoadError error, string message)
     {
         Debug.Log($"Error loading Ad Unit {adUnitId}: {error.ToString()} - {message}");
-        _ShowAndroidToastMessage($"Can't load ad, check you connection");
-        // Use the error details to determine whether to try to load another ad.
     }
 
 
@@ -122,6 +155,7 @@ public class RewardAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListe
                         break;
                 }
             }
+            _showAdButton.interactable = true;
         }
     }
     int x = 0;
@@ -139,7 +173,8 @@ public class RewardAd : MonoBehaviour, IUnityAdsLoadListener, IUnityAdsShowListe
         if (unityActivity != null)
         {
             AndroidJavaClass toastClass = new AndroidJavaClass("android.widget.Toast");
-            unityActivity.Call("runOnUiThread", new AndroidJavaRunnable(() => {
+            unityActivity.Call("runOnUiThread", new AndroidJavaRunnable(() =>
+            {
                 AndroidJavaObject toastObject = toastClass.CallStatic<AndroidJavaObject>("makeText", unityActivity, message, 0);
                 toastObject.Call("show");
             }));
