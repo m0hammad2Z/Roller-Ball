@@ -71,6 +71,7 @@ public class BallController : MonoBehaviour
 
         // Clamping Z-axis
         float clampedAngleZ = clampedEulerAngles.z;
+        print(clampedAngleZ);
         if (clampedAngleZ > 180f)
             clampedAngleZ -= 360f;
         clampedAngleZ = Mathf.Clamp(clampedAngleZ, minAngle, maxAngle);
